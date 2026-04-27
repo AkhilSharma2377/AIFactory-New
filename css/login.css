@@ -83,9 +83,10 @@ body.login-body {
 }
 
 /* Left panel */
+/* Left panel */
 .login-left {
-  background: linear-gradient(145deg, #0b1e3d 0%, #1a3a7a 50%, #0b2a57 100%);
-  padding: 48px 40px;
+  background: linear-gradient(155deg, #071428 0%, #0b2057 40%, #092840 100%);
+  padding: 36px 32px 32px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -94,94 +95,112 @@ body.login-body {
   overflow: hidden;
 }
 
+/* Subtle grid overlay */
 .login-left::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center/60px;
+  background-image:
+    linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+  background-size: 32px 32px;
+  pointer-events: none;
+}
+/* Radial glow */
+.login-left::after {
+  content: '';
+  position: absolute;
+  width: 480px; height: 480px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(26,107,255,.18) 0%, transparent 70%);
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
 }
 
 .login-logo {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 32px;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
 }
 .login-logo-icon {
-  width: 48px; height: 48px;
+  width: 36px; height: 36px;
   background: var(--brand-gradient);
-  border-radius: 14px;
+  border-radius: 10px;
   display: flex; align-items: center; justify-content: center;
-  font-size: 1.4rem; color: #fff;
+  font-size: 1.1rem; color: #fff;
+  box-shadow: 0 0 0 1px rgba(255,255,255,.12);
 }
 .login-logo-text {
   font-family: var(--font-display);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #fff;
+  letter-spacing: -.02em;
 }
 
-.login-awards {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 10px;
-  margin-bottom: 32px;
-}
-.award-badge {
-  width: 52px; height: 52px;
-  background: rgba(255,255,255,.08);
-  border: 1px solid rgba(255,255,255,.15);
-  border-radius: 12px;
-  display: flex; align-items: center; justify-content: center;
-  font-size: .65rem; color: rgba(255,255,255,.7);
-  text-align: center;
-  line-height: 1.2;
-  transition: all var(--transition);
-  position: relative;
-}
-.award-badge:hover {
-  background: rgba(255,255,255,.15);
-  border-color: rgba(255,255,255,.3);
-}
-.award-badge .award-year {
-  position: absolute;
-  bottom: -18px;
-  font-size: .6rem;
-  color: rgba(255,255,255,.5);
-  white-space: nowrap;
-}
-
-.login-left-title {
+/* Headline */
+.ll-headline {
   font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: rgba(255,255,255,.9);
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #fff;
   text-align: center;
-  margin-bottom: 8px;
-  line-height: 1.4;
+  line-height: 1.35;
+  letter-spacing: -.02em;
+  margin-bottom: 6px;
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
 }
-.login-left-sub {
-  font-size: .85rem;
-  color: rgba(255,255,255,.5);
+.ll-headline em {
+  font-style: normal;
+  background: linear-gradient(90deg, #1a6bff, #0d9488);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+.ll-sub {
+  font-size: .8rem;
+  color: rgba(255,255,255,.45);
   text-align: center;
+  margin-bottom: 16px;
+  position: relative;
+  z-index: 1;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
-.ms-partner-badge {
+/* SVG illustration */
+.ll-illustration {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+  flex: 1;
   display: flex;
   align-items: center;
-  gap: 10px;
-  background: rgba(255,255,255,.1);
-  border: 1px solid rgba(255,255,255,.2);
-  border-radius: 12px;
-  padding: 12px 20px;
-  margin-top: 28px;
 }
-.ms-partner-badge span {
-  font-size: .8rem;
-  font-weight: 600;
-  color: rgba(255,255,255,.85);
-  line-height: 1.3;
+.ll-svg {
+  width: 100%;
+  height: auto;
+  display: block;
 }
+
+/* Stat pills row */
+.ll-stats,
+.ll-stat,
+.ll-stat-val,
+.ll-stat-label,
+.ll-stat-sep,
+.ll-features,
+.ll-feature,
+.ll-feature-dot { display: none; }
 
 /* Right panel */
 .login-right {

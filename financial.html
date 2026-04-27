@@ -27,7 +27,7 @@
     </div>
     <nav class="sb-nav">
       <div class="sb-section-label">Overview</div>
-    <a class="sb-item active" href="financial.html" data-page="financial.html" data-label="Financial Services Dashboard">
+    <a class="sb-item" href="financial.html" data-page="financial.html" data-label="Financial Services Dashboard">
       <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
       <span class="sb-label">Financial Services Dashboard</span>
     </a><div class="sb-section-label">Content</div>
@@ -66,7 +66,7 @@
       <span class="sb-icon" style="font-size:15px;">🏥</span>
       <span class="sb-label">Healthcare</span>
     </a>
-    <a class="sb-item active" href="financial.html" data-label="Financial" data-page="financial.html">
+    <a class="sb-item" href="financial.html" data-label="Financial" data-page="financial.html">
       <span class="sb-icon" style="font-size:15px;">💳</span>
       <span class="sb-label">Financial</span>
     </a>
@@ -106,8 +106,8 @@
 <div class="portal-main" id="portalMain">
 
   <header class="topbar" id="topbar">
-    <button class="tb-collapse-btn" id="collapseBtn" title="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
-    <button class="tb-collapse-btn" id="mobileMenuBtn" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <button class="tb-collapse-btn" id="collapseBtn" title="Toggle sidebar" aria-label="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    <button class="tb-collapse-btn" id="mobileMenuBtn" aria-label="Open navigation menu" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
     <div class="tb-breadcrumb">
       <a href="landing-page.html">AI Factory</a>
       <span class="sep">/</span>
@@ -119,14 +119,14 @@
       <input placeholder="Search financial AI use cases…">
     </div>
     <div class="tb-actions">
-      <button class="tb-icon-btn" title="Notifications">
+      <button class="tb-icon-btn" title="Notifications" aria-label="Notifications">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
         <span class="tb-badge"></span>
       </button>
-      <button class="tb-icon-btn" title="Help">
+      <button class="tb-icon-btn" title="Help" aria-label="Help & documentation">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
       </button>
-      <button class="theme-toggle-btn" title="Toggle dark/light mode">🌙</button>
+      <button class="theme-toggle-btn" title="Toggle dark/light mode" aria-label="Toggle dark/light mode">🌙</button>
       <div class="tb-user-chip">
         <div class="tb-chip-avatar js-user-initials">AM</div>
         <span class="tb-chip-name js-user-name">Alex Morgan</span>
@@ -139,8 +139,7 @@
 
 <div class="page-header">
   <div class="page-header-left">
-    <div class="page-eyebrow"><span class="dot"></span>AI Factory · Financial Services</div>
-    <h1 class="page-title">Financial Services AI Platform</h1>
+    <h2 class="page-title">Financial Services AI Platform</h1>
     <p class="page-subtitle">Deploy production-ready agents for fraud detection, credit risk scoring, AML surveillance, and regul…</p>
   </div>
   <div class="page-actions">
@@ -241,7 +240,7 @@
       <div class="agent-meta">Industry: <b>Retail Banking · Payments</b></div>
       <p class="agent-desc">Real-time transaction scoring using graph neural networks — catches synthetic identity, account takeover, and money mule patterns at sub-100ms latency.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -258,7 +257,7 @@
       <div class="agent-meta">Industry: <b>Lending · Underwriting</b></div>
       <p class="agent-desc">Explainable credit scoring using alternative data with SHAP attributions and disparate impact reporting for ECOA compliance.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -275,7 +274,7 @@
       <div class="agent-meta">Industry: <b>Compliance · RegTech</b></div>
       <p class="agent-desc">Entity resolution and typology-based detection for money laundering — auto-generates SAR drafts with cited transaction chains.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -292,7 +291,7 @@
       <div class="agent-meta">Industry: <b>Wealth Management · Risk</b></div>
       <p class="agent-desc">Continuous portfolio stress testing against macro scenarios with plain-language risk narratives for relationship managers.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -309,7 +308,7 @@
       <div class="agent-meta">Industry: <b>Compliance · Finance</b></div>
       <p class="agent-desc">Automates Basel III, IFRS 9, Dodd-Frank, and CCAR report generation with source-cited calculations and variance analysis.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -326,7 +325,7 @@
       <div class="agent-meta">Industry: <b>Compliance · Onboarding</b></div>
       <p class="agent-desc">Accelerates customer onboarding — document extraction, identity verification, sanctions screening, and risk rating in minutes.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>

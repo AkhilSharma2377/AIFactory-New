@@ -86,6 +86,18 @@ document.addEventListener('DOMContentLoaded', () => {
     passEl.value  = 'Demo@123';
     Toast.show('Guest credentials filled — click Login!', 'info');
   });
+
+  document.getElementById('guestBtn2')?.addEventListener('click', () => {
+    emailEl.value = 'health@aifactory.com';
+    passEl.value  = 'Health@123';
+    Toast.show('Healthcare demo credentials filled — click Login!', 'info');
+  });
+
+  document.getElementById('guestBtn2')?.addEventListener('click', () => {
+    emailEl.value = 'demo@aifactory.com';
+    passEl.value  = 'Demo@123';
+    Toast.show('Guest credentials filled — click Login!', 'info');
+  });
 });
 
 /* ── Validation ── */

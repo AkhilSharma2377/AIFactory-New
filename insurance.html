@@ -27,7 +27,7 @@
     </div>
     <nav class="sb-nav">
       <div class="sb-section-label">Overview</div>
-    <a class="sb-item active" href="insurance.html" data-page="insurance.html" data-label="Insurance Dashboard">
+    <a class="sb-item" href="insurance.html" data-page="insurance.html" data-label="Insurance Dashboard">
       <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
       <span class="sb-label">Insurance Dashboard</span>
     </a><div class="sb-section-label">Content</div>
@@ -78,7 +78,7 @@
       <span class="sb-icon" style="font-size:15px;">🛍️</span>
       <span class="sb-label">Retail</span>
     </a>
-    <a class="sb-item active" href="insurance.html" data-label="Insurance" data-page="insurance.html">
+    <a class="sb-item" href="insurance.html" data-label="Insurance" data-page="insurance.html">
       <span class="sb-icon" style="font-size:15px;">🛡️</span>
       <span class="sb-label">Insurance</span>
     </a>
@@ -106,8 +106,8 @@
 <div class="portal-main" id="portalMain">
 
   <header class="topbar" id="topbar">
-    <button class="tb-collapse-btn" id="collapseBtn" title="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
-    <button class="tb-collapse-btn" id="mobileMenuBtn" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <button class="tb-collapse-btn" id="collapseBtn" title="Toggle sidebar" aria-label="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
+    <button class="tb-collapse-btn" id="mobileMenuBtn" aria-label="Open navigation menu" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"/></svg></button>
     <div class="tb-breadcrumb">
       <a href="landing-page.html">AI Factory</a>
       <span class="sep">/</span>
@@ -119,14 +119,14 @@
       <input placeholder="Search insurance use cases…">
     </div>
     <div class="tb-actions">
-      <button class="tb-icon-btn" title="Notifications">
+      <button class="tb-icon-btn" title="Notifications" aria-label="Notifications">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
         <span class="tb-badge"></span>
       </button>
-      <button class="tb-icon-btn" title="Help">
+      <button class="tb-icon-btn" title="Help" aria-label="Help & documentation">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
       </button>
-      <button class="theme-toggle-btn" title="Toggle dark/light mode">🌙</button>
+      <button class="theme-toggle-btn" title="Toggle dark/light mode" aria-label="Toggle dark/light mode">🌙</button>
       <div class="tb-user-chip">
         <div class="tb-chip-avatar js-user-initials">AM</div>
         <span class="tb-chip-name js-user-name">Alex Morgan</span>
@@ -139,8 +139,7 @@
 
 <div class="page-header">
   <div class="page-header-left">
-    <div class="page-eyebrow"><span class="dot"></span>AI Factory · Insurance</div>
-    <h1 class="page-title">Insurance AI Platform</h1>
+    <h2 class="page-title">Insurance AI Platform</h1>
     <p class="page-subtitle">Deploy production-ready agents for claims automation, underwriting enrichment, fraud detection, and …</p>
   </div>
   <div class="page-actions">
@@ -241,7 +240,7 @@
       <div class="agent-meta">Industry: <b>P&C · Auto · Property</b></div>
       <p class="agent-desc">End-to-end straight-through processing for low-complexity claims — FNOL intake, coverage verification, damage assessment, and settlement in hours.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -258,7 +257,7 @@
       <div class="agent-meta">Industry: <b>Commercial · Personal Lines</b></div>
       <p class="agent-desc">Enriches submissions with third-party data signals, aerial imagery, IoT sensor history, and loss run analysis — with explainable risk scores.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -275,7 +274,7 @@
       <div class="agent-meta">Industry: <b>SIU · Claims</b></div>
       <p class="agent-desc">Detects staged accidents, inflated repairs, and organized fraud rings using network analysis, behavioral patterns, and anomaly scoring models.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -292,7 +291,7 @@
       <div class="agent-meta">Industry: <b>Customer Service · Claims</b></div>
       <p class="agent-desc">Omnichannel FNOL capture — extracts loss details, dispatches adjusters, and provides real-time claim status updates to claimants.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -309,7 +308,7 @@
       <div class="agent-meta">Industry: <b>Personal Lines · Retention</b></div>
       <p class="agent-desc">Predicts non-renewal and adverse selection risk at policy renewal — surfaces accounts needing rate review or relationship intervention.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>
@@ -326,7 +325,7 @@
       <div class="agent-meta">Industry: <b>Reinsurance · Actuarial</b></div>
       <p class="agent-desc">Automates treaty and facultative analysis, loss development projections, and ceded premium calculations with cited actuarial sources.</p>
       <div class="agent-footer">
-        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <a href="#case-study" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
         <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
         <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
       </div>

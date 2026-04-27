@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="ind-financial">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Factory · Financial Services</title>
+<link rel="stylesheet" href="css/portal.css">
+</head>
+<body class="ind-financial">
+<div class="portal-wrap">
+
+
+  <div class="sb-overlay" id="sbOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-brand">
+      <div class="sb-logo-mark">AI</div>
+      <div class="sb-brand-text">
+        <strong>AI Factory™</strong>
+        <span>Enterprise Platform</span>
+      </div>
+    </div>
+    <div class="sb-industry">
+      <div class="sb-industry-icon">💳</div>
+      <div class="sb-industry-text">
+        <strong>Financial Services</strong>
+        <span>Industry Dashboard</span>
+      </div>
+    </div>
+    <nav class="sb-nav">
+      <div class="sb-section-label">Overview</div>
+    <a class="sb-item active" href="financial.html" data-page="financial.html" data-label="Financial Services Dashboard">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span class="sb-label">Financial Services Dashboard</span>
+    </a><div class="sb-section-label">Content</div>
+    <a class="sb-item" href="#agents" data-label="Featured Agents">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+      <span class="sb-label">Featured Agents</span>
+    </a>
+    <a class="sb-item" href="#gallery" data-label="Use Cases">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+      <span class="sb-label">Use Cases</span>
+    </a><div class="sb-section-label">Trust</div>
+    <a class="sb-item" href="#compliance" data-label="Compliance">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <span class="sb-label">Compliance</span>
+    </a>
+    <a class="sb-item" href="#how-it-works" data-label="How It Works">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <span class="sb-label">How It Works</span>
+    </a>
+    <a class="sb-item" href="#case-study" data-label="Case Study">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+      <span class="sb-label">Case Study</span>
+    </a><div class="sb-section-label">Support</div>
+    <a class="sb-item" href="#faq" data-label="FAQ">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
+      <span class="sb-label">FAQ</span>
+    </a>
+    <a class="sb-item" href="#cta" data-label="Book Demo">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg></span>
+      <span class="sb-label">Book Demo</span>
+    </a>
+      <div class="sb-divider"></div>
+      <div class="sb-section-label">Industries</div>
+      
+    <a class="sb-item" href="healthcare.html" data-label="Healthcare" data-page="healthcare.html">
+      <span class="sb-icon" style="font-size:15px;">🏥</span>
+      <span class="sb-label">Healthcare</span>
+    </a>
+    <a class="sb-item active" href="financial.html" data-label="Financial" data-page="financial.html">
+      <span class="sb-icon" style="font-size:15px;">💳</span>
+      <span class="sb-label">Financial</span>
+    </a>
+    <a class="sb-item" href="manufacturing.html" data-label="Manufacturing" data-page="manufacturing.html">
+      <span class="sb-icon" style="font-size:15px;">🏭</span>
+      <span class="sb-label">Manufacturing</span>
+    </a>
+    <a class="sb-item" href="retail.html" data-label="Retail" data-page="retail.html">
+      <span class="sb-icon" style="font-size:15px;">🛍️</span>
+      <span class="sb-label">Retail</span>
+    </a>
+    <a class="sb-item" href="insurance.html" data-label="Insurance" data-page="insurance.html">
+      <span class="sb-icon" style="font-size:15px;">🛡️</span>
+      <span class="sb-label">Insurance</span>
+    </a>
+      <div class="sb-divider"></div>
+      <a class="sb-item" href="landing-page.html" data-label="All Industries">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+        <span class="sb-label">All Industries</span>
+      </a>
+      <a class="sb-item js-logout" href="#" data-label="Sign Out">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg></span>
+        <span class="sb-label">Sign Out</span>
+      </a>
+    </nav>
+    <div class="sb-footer">
+      <div class="sb-user">
+        <div class="sb-avatar js-user-initials">AM</div>
+        <div class="sb-user-info">
+          <div class="sb-user-name js-user-name">Alex Morgan</div>
+          <div class="sb-user-role">Platform Admin</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+<div class="portal-main" id="portalMain">
+
+  <header class="topbar" id="topbar">
+    <button class="tb-collapse-btn" id="collapseBtn" title="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <button class="tb-collapse-btn" id="mobileMenuBtn" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <div class="tb-breadcrumb">
+      <a href="landing-page.html">AI Factory</a>
+      <span class="sep">/</span>
+      <span class="current">Financial Services</span>
+    </div>
+    <div class="tb-spacer"></div>
+    <div class="tb-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input placeholder="Search financial AI use cases…">
+    </div>
+    <div class="tb-actions">
+      <button class="tb-icon-btn" title="Notifications">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
+        <span class="tb-badge"></span>
+      </button>
+      <button class="tb-icon-btn" title="Help">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
+      </button>
+      <button class="theme-toggle-btn" title="Toggle dark/light mode">🌙</button>
+      <div class="tb-user-chip">
+        <div class="tb-chip-avatar js-user-initials">AM</div>
+        <span class="tb-chip-name js-user-name">Alex Morgan</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+  </header>
+
+<div class="page-content">
+
+<div class="page-header">
+  <div class="page-header-left">
+    <div class="page-eyebrow"><span class="dot"></span>AI Factory · Financial Services</div>
+    <h1 class="page-title">Financial Services AI Platform</h1>
+    <p class="page-subtitle">Deploy production-ready agents for fraud detection, credit risk scoring, AML surveillance, and regul…</p>
+  </div>
+  <div class="page-actions">
+    <a href="landing-page.html" class="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 12H5M12 5l-7 7 7 7"/></svg> All Industries</a>
+    <a href="#cta" class="btn btn-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg> Book Demo</a>
+  </div>
+</div>
+
+<div class="industry-hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span class="dot"></span>AI Factory · Financial Services</div>
+    <h1 class="hero-h1">AI agents purpose-built for <em>risk, compliance &amp; wealth</em> workflows.</h1>
+    <p class="hero-sub">Deploy production-ready agents for fraud detection, credit risk scoring, AML surveillance, and regulatory reporting — on your infrastructure, with full explainability and regulator-ready audit trails.</p>
+    <div class="hero-cta-row">
+      <a href="#cta" class="btn btn-primary btn-sm">Book a 30-min demo →</a>
+      <a href="#gallery" class="btn btn-ghost btn-sm">Explore use cases</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item"><b>180+</b> production agents deployed</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item">SOC 2 · ISO 27001 · PCI-DSS</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item">Azure · AWS · <b>GCP</b></div>
+    </div>
+  </div>
+  <div class="chat-widget">
+    <div class="chat-head">
+      <div class="chat-head-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg></div>
+      <div><div class="chat-head-name">Fraud Detection Agent</div><div class="chat-head-role">v4.1</div></div>
+      <div class="chat-live">Live</div>
+    </div>
+    <div class="chat-msgs">
+      <div class="chat-msg u">Real-time transaction scoring using graph neural networks — …</div>
+      <div class="chat-msg b"><b>Analysis complete.</b> catches synthetic identity, account takeover, and money mule patterns …<br><span class="chat-pill">✓ Financial Services AI Engine</span></div>
+    </div>
+    <div class="chat-float-row">
+      <div class="chat-float">
+        <div class="chat-float-label">Fraud detection accuracy</div>
+        <div class="chat-float-val">94</div>
+        <div class="chat-float-delta">Tier-1 bank · 12-month produ</div>
+        <div class="chat-mini-bars"><span style="height:55%"></span><span style="height:70%"></span><span style="height:45%"></span><span style="height:35%"></span><span style="height:22%"></span><span style="height:16%"></span><span style="height:100%"></span></div>
+      </div>
+      <div class="chat-float">
+        <div class="chat-float-label">Monthly fraud prevented </div>
+        <div class="chat-float-val">$4.2</div>
+        <div class="chat-float-delta">12 retail banking deployment</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trust-row">
+  <span class="trust-label">Trusted by</span>
+  <div class="trust-logos"><span class="trust-logo">◆ Apex Capital</span><div class="trust-sep"></div><span class="trust-logo">◈ Meridian Bank</span><div class="trust-sep"></div><span class="trust-logo">■ Volta Fintech</span><div class="trust-sep"></div><span class="trust-logo">● NovaPay</span><div class="trust-sep"></div><span class="trust-logo">∿ ClearLedger</span></div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg></div>
+    <div class="kpi-value">94<sub>%</sub></div>
+    <div class="kpi-label">Fraud detection accuracy with <0.1% false positive rate</div>
+    <div class="kpi-source">Tier-1 bank · 12-month production</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg></div>
+    <div class="kpi-value">$4.2<sub>M</sub></div>
+    <div class="kpi-label">Monthly fraud prevented per deployment on average</div>
+    <div class="kpi-source">12 retail banking deployments</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <div class="kpi-value">1.8<sub>s</sub></div>
+    <div class="kpi-label">Average credit decision latency vs 48 hours manual</div>
+    <div class="kpi-source">Digital lending platform</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/></svg></div>
+    <div class="kpi-value">63<sub>%</sub></div>
+    <div class="kpi-label">Reduction in AML false positives reducing analyst workload</div>
+    <div class="kpi-source">Regional bank · n=3</div>
+  </div></div>
+
+<div id="agents">
+<div class="section-title-row">
+  <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg> Featured Agents</h2>
+  <a href="#gallery" class="btn btn-ghost btn-sm">View all →</a>
+</div>
+<p class="section-desc">Each agent ships with explainability reports, audit logs, and model cards — integrated with core banking, trading, and CRM systems.</p>
+<div class="agents-grid">
+  <article class="agent-card">
+    <div class="agent-thumb t1">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 14c0 4-3.5 6-7 6s-7-2-7-6V6c0-1 1-2 2-2h3"/><path d="M14 4h3c1 0 2 1 2 2v8"/><circle cx="19" cy="18" r="2"/><path d="M12 4v6M9 7h6"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v4.1</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Fraud Detection Agent</div>
+      <div class="agent-meta">Industry: <b>Retail Banking · Payments</b></div>
+      <p class="agent-desc">Real-time transaction scoring using graph neural networks — catches synthetic identity, account takeover, and money mule patterns at sub-100ms latency.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t2">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v2.3</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Credit Risk Scorer</div>
+      <div class="agent-meta">Industry: <b>Lending · Underwriting</b></div>
+      <p class="agent-desc">Explainable credit scoring using alternative data with SHAP attributions and disparate impact reporting for ECOA compliance.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t3">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v1.8</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">AML Surveillance Agent</div>
+      <div class="agent-meta">Industry: <b>Compliance · RegTech</b></div>
+      <p class="agent-desc">Entity resolution and typology-based detection for money laundering — auto-generates SAR drafts with cited transaction chains.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t4">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M21 15a4 4 0 01-4 4H7l-4 4V5a4 4 0 014-4h10a4 4 0 014 4z"/><circle cx="9" cy="10" r="1"/><circle cx="13" cy="10" r="1"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v3.0</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Portfolio Risk Monitor</div>
+      <div class="agent-meta">Industry: <b>Wealth Management · Risk</b></div>
+      <p class="agent-desc">Continuous portfolio stress testing against macro scenarios with plain-language risk narratives for relationship managers.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t5">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/><circle cx="8" cy="16" r="2"/><circle cx="14" cy="10" r="2"/><circle cx="19" cy="7" r="2"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v1.4</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Regulatory Reporting AI</div>
+      <div class="agent-meta">Industry: <b>Compliance · Finance</b></div>
+      <p class="agent-desc">Automates Basel III, IFRS 9, Dodd-Frank, and CCAR report generation with source-cited calculations and variance analysis.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t6">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M10 3L3 10l6 6 7-7z"/><path d="M16 6l5 5-7 7-3-3"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v2.1</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">KYC / Onboarding Agent</div>
+      <div class="agent-meta">Industry: <b>Compliance · Onboarding</b></div>
+      <p class="agent-desc">Accelerates customer onboarding — document extraction, identity verification, sanctions screening, and risk rating in minutes.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article></div>
+</div>
+
+<div class="gallery-wrap" id="gallery">
+  <div class="gallery-header">
+    <div class="section-title-row" style="margin-bottom:14px;">
+      <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg> Full Use-Case Gallery</h2>
+    </div>
+    <p class="section-desc" style="margin-bottom:14px;">Filter by business line, data source, regulatory framework, or business goal. All assets include a working POC and a case study.</p>
+  </div>
+  <div class="gallery-controls">
+    <div class="gallery-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input id="searchInput" placeholder="Search financial AI use cases…">
+      <span class="count-badge" id="count">0</span>
+    </div>
+    <div class="chip-row" id="categoryChips"></div>
+  </div>
+  <div class="gallery-body">
+    <div class="filter-panel" id="filterSidebar"></div>
+    <div class="gallery-grid-wrap"><div class="gallery-grid" id="galleryGrid"></div></div>
+  </div>
+</div>
+
+<div class="compliance-section" id="compliance">
+  <div class="section-title-row">
+    <h2 style="color:white;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg> Trust &amp; Security</h2>
+  </div>
+  <p class="compliance-desc">Every agent runs in your own cloud tenant. Customer data never leaves your perimeter — not for inference, not for model training.</p>
+  <div class="badge-row">
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+    <div class="badge-name">SOC 2 Type II</div>
+    <div class="badge-desc">Continuous third-party attested audit</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/></svg></div>
+    <div class="badge-name">ISO 27001</div>
+    <div class="badge-desc">Information security management certified</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+    <div class="badge-name">PCI-DSS Level 1</div>
+    <div class="badge-desc">Highest tier payment data security</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 3l9 4v6c0 5-4 9-9 11-5-2-9-6-9-11V7z"/></svg></div>
+    <div class="badge-name">GDPR Compliant</div>
+    <div class="badge-desc">Data residency controls per jurisdiction</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6-9 6z"/><path d="M3 9v6l9 6 9-6V9"/></svg></div>
+    <div class="badge-name">DORA Aligned</div>
+    <div class="badge-desc">EU Digital Operational Resilience Act</div>
+  </div></div>
+  <div class="promise-row">
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3h18v4H3z"/><path d="M3 10h18v11H3z"/></svg></div>
+    <h4>Full explainability on every decision</h4>
+    <p>Every credit score, fraud flag, and risk rating comes with SHAP-attributed feature explanations — ready for regulator review under SR 11-7.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+    <h4>Your data never leaves your perimeter</h4>
+    <p>Deploy into your existing cloud VPC. All inference happens on your infrastructure — no data shared with third parties or used for shared model training.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 14l2 2 4-4"/></svg></div>
+    <h4>Regulator-ready audit trails</h4>
+    <p>Every model decision is logged with timestamp, features, output, and model version — exportable for SR 11-7 and OCC Model Risk Management reviews.</p>
+  </div></div>
+</div>
+
+<div class="steps-section" id="how-it-works">
+  <div class="section-title-row">
+    <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> From Kickoff to Production in <em>Under 6 weeks</em></h2>
+  </div>
+  <div class="steps-row">
+  <div class="step-item">
+    <div class="step-num">01</div>
+    <h4>Discover</h4>
+    <p>Map your top risk and compliance pain points. Prioritize use cases by regulatory impact and data availability.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">02</div>
+    <h4>Configure</h4>
+    <p>Wire agents into your core banking, CRM, and data warehouse. Pre-built connectors for Temenos, Finastra, and Salesforce FS.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">03</div>
+    <h4>Validate</h4>
+    <p>Model risk review, champion-challenger testing, bias audits across protected classes, and back-testing on historical data.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">04</div>
+    <h4>Deploy</h4>
+    <p>Phased rollout with monitoring dashboards, drift detection, and performance SLAs tied to your regulatory commitments.</p>
+  </div></div>
+</div>
+
+<div class="case-section" id="case-study">
+  <div class="section-title-row"><h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Customer Story</h2></div>
+  <div class="case-card-inner">
+    <div class="case-visual">
+      <div class="case-logo-tag">◆ Meridian Bank</div>
+      <div class="case-metrics"><div class="case-metric"><div class="v">94%</div><div class="l">Detection accuracy</div></div><div class="case-metric"><div class="v">$28M</div><div class="l">Fraud averted yr-1</div></div><div class="case-metric"><div class="v">5 wks</div><div class="l">Go-live</div></div></div>
+    </div>
+    <div class="case-body">
+      <p class="case-quote">We replaced three point solutions with a single AI Factory deployment. Our fraud team now investigates 60% fewer false positives and our SAR filing time dropped from 3 days to 4 hours.</p>
+      <div class="case-attrib"><div class="case-ph">SC</div><div class="case-who"><b>Sarah Chen</b><span>Chief Risk Officer · Meridian Bank</span></div></div>
+      <a href="#" class="case-link">Read the full case study <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<div class="faq-section" id="faq">
+  <div class="section-title-row"><h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg> Frequently Asked</h2></div>
+  <div class="faq-list">
+  <details class="faq-item"open>
+    <summary class="faq-q">How does the model handle regulatory explainability requirements?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Every decision includes SHAP feature attributions, confidence intervals, and a plain-language rationale — formatted for SR 11-7 Model Risk Management documentation and examiner review.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">Which core banking systems can you connect to?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Pre-built connectors for Temenos T24, Finastra Fusion, FIS, Jack Henry, and Mambu. Salesforce Financial Services Cloud, Bloomberg, and Reuters Eikon are also supported.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">How is model bias evaluated for credit decisions?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">We run disparate impact analysis across protected classes per ECOA and Fair Housing Act guidelines before every production deployment, with continuous monitoring for distribution shift.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">Can the agents operate in a real-time transaction environment?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Yes. The fraud and AML agents are designed for sub-100ms inference with horizontal auto-scaling — tested to 50,000 transactions per second.</div>
+  </details></div>
+</div>
+
+<div class="cta-section" id="cta">
+  <div>
+    <div class="cta-eyebrow"><span class="dot"></span>Book a Demo</div>
+    <h2 class="cta-h2">See AI Factory on <em>your</em> data.</h2>
+    <p class="cta-p">A 30-minute working session with our financial services AI team. We'll pick one of your use cases and show you a production agent live.</p>
+    <div class="cta-checks"><div class="cta-check">No data required for demo</div><div class="cta-check">Regulator-ready documentation</div><div class="cta-check">MSA-friendly commercial terms</div></div>
+  </div>
+  <form class="cta-form-wrap cta-form">
+    <div class="cta-row">
+      <div class="cta-field"><label>First name</label><input type="text" placeholder="Alex"></div>
+      <div class="cta-field"><label>Last name</label><input type="text" placeholder="Morgan"></div>
+    </div>
+    <div class="cta-field"><label>Work email</label><input type="email" placeholder="you@company.com"></div>
+    <div class="cta-row">
+      <div class="cta-field"><label>Organization</label><input type="text" placeholder="Company Name"></div>
+      <div class="cta-field"><label>Role</label><select><option>CRO / Chief Risk Officer</option><option>CIO / CTO</option><option>Head of Compliance</option><option>VP Fraud & Financial Crimes</option><option>Other</option></select></div>
+    </div>
+    <button type="submit" class="cta-submit">Book my 30-min session →</button>
+  </form>
+</div>
+</div><!-- /page-content -->
+</div><!-- /portal-main -->
+</div><!-- /portal-wrap -->
+
+<script src="js/core.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/portal.js"></script>
+<script>
+/* Mobile menu button visibility */
+document.getElementById('mobileMenuBtn').style.display = 'flex';
+
+const USE_CASES = [
+  {id:1,title:"Real-time Fraud Scoring",cat:"fraud",biz:["retail","payments"],src:["txn"],reg:["pci"],goal:["loss"],desc:"Sub-100ms transaction risk scoring using graph neural networks — catches synthetic identity, ATO, and mule patterns.",status:"consumed",ver:"4.1",tone:"t1"},
+  {id:2,title:"AML Typology Detector",cat:"compliance",biz:["corporate","retail"],src:["txn","kyc"],reg:["bsa"],goal:["risk"],desc:"Detects layering, structuring, and smurfing with auto-generated SAR narratives and entity resolution.",status:"trending",ver:"2.0",tone:"t2"},
+  {id:3,title:"Credit Risk ML Scorer",cat:"lending",biz:["retail","sme"],src:["bureau","alt"],reg:["ecoa"],goal:["revenue"],desc:"Explainable credit scoring with SHAP attributions and disparate impact reporting.",status:"new",ver:"2.3",tone:"t3"},
+  {id:4,title:"KYC Document Extractor",cat:"compliance",biz:["retail","corporate"],src:["docs","kyc"],reg:["aml"],goal:["cost"],desc:"Extracts, classifies, and validates identity documents — integrates with sanctions and PEP screens.",status:"consumed",ver:"3.1",tone:"t4"},
+  {id:5,title:"Portfolio Stress Tester",cat:"risk",biz:["wealth","corp"],src:["market","positions"],reg:["ccar"],goal:["risk"],desc:"Macro scenario stress tests across equity, fixed income, and derivatives books with plain-language summaries.",status:"trending",ver:"1.7",tone:"t5"},
+  {id:6,title:"Basel III Reporter",cat:"compliance",biz:["corporate"],src:["gl","risk"],reg:["basel"],goal:["cost"],desc:"Automates RWA calculation, capital ratio reporting, and LCR/NSFR disclosures with source-cited variance analysis.",status:"consumed",ver:"2.5",tone:"t6"},
+  {id:7,title:"Chargeback Dispute AI",cat:"fraud",biz:["payments"],src:["txn"],reg:["pci"],goal:["loss"],desc:"Classifies dispute types, gathers evidence, and drafts representment responses — cuts dispute handling time by 70%.",status:"new",ver:"1.2",tone:"t1"},
+  {id:8,title:"Loan Origination Assistant",cat:"lending",biz:["retail","sme"],src:["bureau","docs"],reg:["ecoa"],goal:["revenue"],desc:"Guides underwriters through origination — auto-populates spread sheets and flags covenant exceptions.",status:"consumed",ver:"2.8",tone:"t2"},
+  {id:9,title:"Trade Surveillance Agent",cat:"compliance",biz:["capital"],src:["trades","comms"],reg:["mifid"],goal:["risk"],desc:"Detects insider trading, spoofing, and wash trading patterns across equities, FX, and derivatives.",status:"trending",ver:"1.5",tone:"t3"},
+  {id:10,title:"Sanctions Screening Agent",cat:"compliance",biz:["retail","corporate","payments"],src:["kyc","txn"],reg:["aml","ofac"],goal:["risk"],desc:"Real-time OFAC, EU, UN sanctions screening with fuzzy match and entity resolution under 50ms.",status:"consumed",ver:"3.4",tone:"t4"},
+  {id:11,title:"Customer 360 Insights",cat:"wealth",biz:["wealth","retail"],src:["crm","txn"],reg:[],goal:["revenue"],desc:"Synthesizes transaction history, product holdings, and life-event signals into RM-ready relationship briefs.",status:"new",ver:"1.1",tone:"t5"},
+  {id:12,title:"IFRS 9 Provision Engine",cat:"compliance",biz:["corporate"],src:["gl","risk"],reg:["ifrs"],goal:["cost"],desc:"Calculates ECL provisions under IFRS 9 Stage 1/2/3 with full audit trail and management overlay documentation.",status:"trending",ver:"1.9",tone:"t6"},
+  {id:13,title:"Mortgage Underwriting AI",cat:"lending",biz:["retail"],src:["bureau","docs","appraisal"],reg:["ecoa","hmda"],goal:["revenue"],desc:"End-to-end mortgage underwriting automation — income verification, LTV analysis, and DU/LP interpretation.",status:"consumed",ver:"2.2",tone:"t1"},
+  {id:14,title:"Wealth Rebalancing Agent",cat:"wealth",biz:["wealth"],src:["market","positions"],reg:[],goal:["revenue"],desc:"Tax-aware portfolio rebalancing with drift monitoring, ESG constraint enforcement, and client communication.",status:"new",ver:"1.0",tone:"t2"},
+  {id:15,title:"Collections Strategy AI",cat:"lending",biz:["retail","sme"],src:["bureau","txn"],reg:["fdcpa"],goal:["loss"],desc:"Optimizes collection outreach by segment — predicts recovery probability and recommends treatment paths.",status:"consumed",ver:"2.0",tone:"t3"},
+];
+const categories = [
+  {id:"fraud",label:"Fraud & Payments",count:3},
+  {id:"compliance",label:"Compliance & AML",count:6},
+  {id:"lending",label:"Lending & Credit",count:4},
+  {id:"risk",label:"Risk Management",count:1},
+  {id:"wealth",label:"Wealth & Advisory",count:2},
+];
+const filters = {
+  biz:{label:"Business line",items:[{value:"retail",label:"Retail banking",count:9},{value:"corporate",label:"Corporate / wholesale",count:7},{value:"wealth",label:"Wealth management",count:4},{value:"payments",label:"Payments",count:3},{value:"capital",label:"Capital markets",count:3},{value:"sme",label:"SME lending",count:3}]},
+  src:{label:"Data source",items:[{value:"txn",label:"Transaction data",count:7},{value:"kyc",label:"KYC / identity",count:4},{value:"bureau",label:"Credit bureau",count:4},{value:"market",label:"Market data",count:3},{value:"docs",label:"Documents",count:5},{value:"gl",label:"General ledger",count:2}]},
+  reg:{label:"Regulatory framework",items:[{value:"aml",label:"AML / BSA",count:4},{value:"ecoa",label:"ECOA / Fair Lending",count:3},{value:"pci",label:"PCI-DSS",count:2},{value:"basel",label:"Basel III/IV",count:2},{value:"ifrs",label:"IFRS 9",count:1},{value:"mifid",label:"MiFID II",count:1}]},
+  goal:{label:"Business goal",items:[{value:"loss",label:"Reduce fraud/credit losses",count:5},{value:"risk",label:"Improve risk coverage",count:5},{value:"revenue",label:"Grow revenue",count:4},{value:"cost",label:"Cut operational cost",count:3}]},
+};
+initGallery(USE_CASES, "Financial Services", categories, filters);
+</script>
+</body>
+</html>

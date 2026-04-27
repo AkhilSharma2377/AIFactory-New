@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="ind-insurance">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Factory · Insurance</title>
+<link rel="stylesheet" href="css/portal.css">
+</head>
+<body class="ind-insurance">
+<div class="portal-wrap">
+
+
+  <div class="sb-overlay" id="sbOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-brand">
+      <div class="sb-logo-mark">AI</div>
+      <div class="sb-brand-text">
+        <strong>AI Factory™</strong>
+        <span>Enterprise Platform</span>
+      </div>
+    </div>
+    <div class="sb-industry">
+      <div class="sb-industry-icon">🛡️</div>
+      <div class="sb-industry-text">
+        <strong>Insurance</strong>
+        <span>Industry Dashboard</span>
+      </div>
+    </div>
+    <nav class="sb-nav">
+      <div class="sb-section-label">Overview</div>
+    <a class="sb-item active" href="insurance.html" data-page="insurance.html" data-label="Insurance Dashboard">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span class="sb-label">Insurance Dashboard</span>
+    </a><div class="sb-section-label">Content</div>
+    <a class="sb-item" href="#agents" data-label="Featured Agents">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+      <span class="sb-label">Featured Agents</span>
+    </a>
+    <a class="sb-item" href="#gallery" data-label="Use Cases">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+      <span class="sb-label">Use Cases</span>
+    </a><div class="sb-section-label">Trust</div>
+    <a class="sb-item" href="#compliance" data-label="Compliance">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <span class="sb-label">Compliance</span>
+    </a>
+    <a class="sb-item" href="#how-it-works" data-label="How It Works">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <span class="sb-label">How It Works</span>
+    </a>
+    <a class="sb-item" href="#case-study" data-label="Case Study">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+      <span class="sb-label">Case Study</span>
+    </a><div class="sb-section-label">Support</div>
+    <a class="sb-item" href="#faq" data-label="FAQ">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
+      <span class="sb-label">FAQ</span>
+    </a>
+    <a class="sb-item" href="#cta" data-label="Book Demo">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg></span>
+      <span class="sb-label">Book Demo</span>
+    </a>
+      <div class="sb-divider"></div>
+      <div class="sb-section-label">Industries</div>
+      
+    <a class="sb-item" href="healthcare.html" data-label="Healthcare" data-page="healthcare.html">
+      <span class="sb-icon" style="font-size:15px;">🏥</span>
+      <span class="sb-label">Healthcare</span>
+    </a>
+    <a class="sb-item" href="financial.html" data-label="Financial" data-page="financial.html">
+      <span class="sb-icon" style="font-size:15px;">💳</span>
+      <span class="sb-label">Financial</span>
+    </a>
+    <a class="sb-item" href="manufacturing.html" data-label="Manufacturing" data-page="manufacturing.html">
+      <span class="sb-icon" style="font-size:15px;">🏭</span>
+      <span class="sb-label">Manufacturing</span>
+    </a>
+    <a class="sb-item" href="retail.html" data-label="Retail" data-page="retail.html">
+      <span class="sb-icon" style="font-size:15px;">🛍️</span>
+      <span class="sb-label">Retail</span>
+    </a>
+    <a class="sb-item active" href="insurance.html" data-label="Insurance" data-page="insurance.html">
+      <span class="sb-icon" style="font-size:15px;">🛡️</span>
+      <span class="sb-label">Insurance</span>
+    </a>
+      <div class="sb-divider"></div>
+      <a class="sb-item" href="landing-page.html" data-label="All Industries">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+        <span class="sb-label">All Industries</span>
+      </a>
+      <a class="sb-item js-logout" href="#" data-label="Sign Out">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg></span>
+        <span class="sb-label">Sign Out</span>
+      </a>
+    </nav>
+    <div class="sb-footer">
+      <div class="sb-user">
+        <div class="sb-avatar js-user-initials">AM</div>
+        <div class="sb-user-info">
+          <div class="sb-user-name js-user-name">Alex Morgan</div>
+          <div class="sb-user-role">Platform Admin</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+<div class="portal-main" id="portalMain">
+
+  <header class="topbar" id="topbar">
+    <button class="tb-collapse-btn" id="collapseBtn" title="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <button class="tb-collapse-btn" id="mobileMenuBtn" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <div class="tb-breadcrumb">
+      <a href="landing-page.html">AI Factory</a>
+      <span class="sep">/</span>
+      <span class="current">Insurance</span>
+    </div>
+    <div class="tb-spacer"></div>
+    <div class="tb-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input placeholder="Search insurance use cases…">
+    </div>
+    <div class="tb-actions">
+      <button class="tb-icon-btn" title="Notifications">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
+        <span class="tb-badge"></span>
+      </button>
+      <button class="tb-icon-btn" title="Help">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
+      </button>
+      <button class="theme-toggle-btn" title="Toggle dark/light mode">🌙</button>
+      <div class="tb-user-chip">
+        <div class="tb-chip-avatar js-user-initials">AM</div>
+        <span class="tb-chip-name js-user-name">Alex Morgan</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+  </header>
+
+<div class="page-content">
+
+<div class="page-header">
+  <div class="page-header-left">
+    <div class="page-eyebrow"><span class="dot"></span>AI Factory · Insurance</div>
+    <h1 class="page-title">Insurance AI Platform</h1>
+    <p class="page-subtitle">Deploy production-ready agents for claims automation, underwriting enrichment, fraud detection, and …</p>
+  </div>
+  <div class="page-actions">
+    <a href="landing-page.html" class="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 12H5M12 5l-7 7 7 7"/></svg> All Industries</a>
+    <a href="#cta" class="btn btn-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg> Book Demo</a>
+  </div>
+</div>
+
+<div class="industry-hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span class="dot"></span>AI Factory · Insurance</div>
+    <h1 class="hero-h1">AI agents purpose-built for <em>claims, underwriting &amp; fraud intelligence</em>.</h1>
+    <p class="hero-sub">Deploy production-ready agents for claims automation, underwriting enrichment, fraud detection, and customer engagement — on your cloud, with full explainability and state DOI-ready governance.</p>
+    <div class="hero-cta-row">
+      <a href="#cta" class="btn btn-primary btn-sm">Book a 30-min demo →</a>
+      <a href="#gallery" class="btn btn-ghost btn-sm">Explore use cases</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item"><b>120+</b> production deployments</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item">SOC 2 · ISO 27001 · State DOI compliant</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item">Azure · AWS · <b>GCP</b></div>
+    </div>
+  </div>
+  <div class="chat-widget">
+    <div class="chat-head">
+      <div class="chat-head-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg></div>
+      <div><div class="chat-head-name">Claims Automation Agent</div><div class="chat-head-role">v3.0</div></div>
+      <div class="chat-live">Live</div>
+    </div>
+    <div class="chat-msgs">
+      <div class="chat-msg u">End-to-end straight-through processing for low-complexity cl…</div>
+      <div class="chat-msg b"><b>Analysis complete.</b> aims — FNOL intake, coverage verification, damage assessment, and sett…<br><span class="chat-pill">✓ Insurance AI Engine</span></div>
+    </div>
+    <div class="chat-float-row">
+      <div class="chat-float">
+        <div class="chat-float-label">Claims processed automat</div>
+        <div class="chat-float-val">68</div>
+        <div class="chat-float-delta">P&C carrier · 18-month produ</div>
+        <div class="chat-mini-bars"><span style="height:55%"></span><span style="height:70%"></span><span style="height:45%"></span><span style="height:35%"></span><span style="height:22%"></span><span style="height:16%"></span><span style="height:100%"></span></div>
+      </div>
+      <div class="chat-float">
+        <div class="chat-float-label">Average settlement cycle</div>
+        <div class="chat-float-val">4.2</div>
+        <div class="chat-float-delta">12 property claims deploymen</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trust-row">
+  <span class="trust-label">Trusted by</span>
+  <div class="trust-logos"><span class="trust-logo">◆ Apex Mutual</span><div class="trust-sep"></div><span class="trust-logo">◈ Meridian Life</span><div class="trust-sep"></div><span class="trust-logo">■ ClearCover MGA</span><div class="trust-sep"></div><span class="trust-logo">● NovaSure</span><div class="trust-sep"></div><span class="trust-logo">∿ PeakRe</span></div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg></div>
+    <div class="kpi-value">68<sub>%</sub></div>
+    <div class="kpi-label">Claims processed automatically without adjuster touch point</div>
+    <div class="kpi-source">P&C carrier · 18-month production</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <div class="kpi-value">4.2<sub>hrs</sub></div>
+    <div class="kpi-label">Average settlement cycle vs. 6 business days with manual processing</div>
+    <div class="kpi-source">12 property claims deployments</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/></svg></div>
+    <div class="kpi-value">$9.1<sub>M</sub></div>
+    <div class="kpi-label">Annual fraud losses prevented per carrier deployment</div>
+    <div class="kpi-source">3 auto & homeowner carriers</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/></svg></div>
+    <div class="kpi-value">97.2<sub>%</sub></div>
+    <div class="kpi-label">Underwriting model accuracy vs. actuarial benchmarks</div>
+    <div class="kpi-source">Independent model validation</div>
+  </div></div>
+
+<div id="agents">
+<div class="section-title-row">
+  <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg> Featured Agents</h2>
+  <a href="#gallery" class="btn btn-ghost btn-sm">View all →</a>
+</div>
+<p class="section-desc">Each agent integrates with Guidewire, Duck Creek, Majesco, and most ISO/ACORD-standard systems out of the box.</p>
+<div class="agents-grid">
+  <article class="agent-card">
+    <div class="agent-thumb t1">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 14c0 4-3.5 6-7 6s-7-2-7-6V6c0-1 1-2 2-2h3"/><path d="M14 4h3c1 0 2 1 2 2v8"/><circle cx="19" cy="18" r="2"/><path d="M12 4v6M9 7h6"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v3.0</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Claims Automation Agent</div>
+      <div class="agent-meta">Industry: <b>P&C · Auto · Property</b></div>
+      <p class="agent-desc">End-to-end straight-through processing for low-complexity claims — FNOL intake, coverage verification, damage assessment, and settlement in hours.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t2">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v2.1</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Underwriting Enrichment AI</div>
+      <div class="agent-meta">Industry: <b>Commercial · Personal Lines</b></div>
+      <p class="agent-desc">Enriches submissions with third-party data signals, aerial imagery, IoT sensor history, and loss run analysis — with explainable risk scores.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t3">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v1.6</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Claims Fraud Detector</div>
+      <div class="agent-meta">Industry: <b>SIU · Claims</b></div>
+      <p class="agent-desc">Detects staged accidents, inflated repairs, and organized fraud rings using network analysis, behavioral patterns, and anomaly scoring models.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t4">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M21 15a4 4 0 01-4 4H7l-4 4V5a4 4 0 014-4h10a4 4 0 014 4z"/><circle cx="9" cy="10" r="1"/><circle cx="13" cy="10" r="1"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v2.4</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">FNOL Intake Chatbot</div>
+      <div class="agent-meta">Industry: <b>Customer Service · Claims</b></div>
+      <p class="agent-desc">Omnichannel FNOL capture — extracts loss details, dispatches adjusters, and provides real-time claim status updates to claimants.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t5">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/><circle cx="8" cy="16" r="2"/><circle cx="14" cy="10" r="2"/><circle cx="19" cy="7" r="2"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v1.3</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Renewal Risk Scorer</div>
+      <div class="agent-meta">Industry: <b>Personal Lines · Retention</b></div>
+      <p class="agent-desc">Predicts non-renewal and adverse selection risk at policy renewal — surfaces accounts needing rate review or relationship intervention.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t6">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M10 3L3 10l6 6 7-7z"/><path d="M16 6l5 5-7 7-3-3"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v1.8</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Reinsurance Analytics Agent</div>
+      <div class="agent-meta">Industry: <b>Reinsurance · Actuarial</b></div>
+      <p class="agent-desc">Automates treaty and facultative analysis, loss development projections, and ceded premium calculations with cited actuarial sources.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article></div>
+</div>
+
+<div class="gallery-wrap" id="gallery">
+  <div class="gallery-header">
+    <div class="section-title-row" style="margin-bottom:14px;">
+      <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg> Full Use-Case Gallery</h2>
+    </div>
+    <p class="section-desc" style="margin-bottom:14px;">Filter by line of business, process stage, data source, or regulatory jurisdiction. All assets include a working POC and a case study.</p>
+  </div>
+  <div class="gallery-controls">
+    <div class="gallery-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input id="searchInput" placeholder="Search insurance use cases…">
+      <span class="count-badge" id="count">0</span>
+    </div>
+    <div class="chip-row" id="categoryChips"></div>
+  </div>
+  <div class="gallery-body">
+    <div class="filter-panel" id="filterSidebar"></div>
+    <div class="gallery-grid-wrap"><div class="gallery-grid" id="galleryGrid"></div></div>
+  </div>
+</div>
+
+<div class="compliance-section" id="compliance">
+  <div class="section-title-row">
+    <h2 style="color:white;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg> Trust &amp; Security</h2>
+  </div>
+  <p class="compliance-desc">Every agent runs inside your cloud tenant. Policyholder PII and claim data never leaves your environment — not for model training, not for benchmarking.</p>
+  <div class="badge-row">
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+    <div class="badge-name">SOC 2 Type II</div>
+    <div class="badge-desc">Third-party attested security controls</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/></svg></div>
+    <div class="badge-name">ISO 27001</div>
+    <div class="badge-desc">Information security management certified</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <div class="badge-name">State DOI Ready</div>
+    <div class="badge-desc">Model governance docs for regulatory filing</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 3l9 4v6c0 5-4 9-9 11-5-2-9-6-9-11V7z"/></svg></div>
+    <div class="badge-name">GDPR / CCPA</div>
+    <div class="badge-desc">Privacy regulation compliant by design</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6-9 6z"/><path d="M3 9v6l9 6 9-6V9"/></svg></div>
+    <div class="badge-name">NAIC AI Principles</div>
+    <div class="badge-desc">Aligned with NAIC model AI governance</div>
+  </div></div>
+  <div class="promise-row">
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+    <h4>Policyholder data stays in your tenant</h4>
+    <p>Deploy into your existing AWS, Azure, or GCP. No claim data, PII, or loss history leaves your perimeter for any purpose.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 4-8"/></svg></div>
+    <h4>Every decision is explainable</h4>
+    <p>Every claim disposition, fraud flag, and underwriting score includes the data points and thresholds — ready for DOI examination and management review.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 14l2 2 4-4"/></svg></div>
+    <h4>Audit trails for every touchpoint</h4>
+    <p>Every agent action — claim assessment, fraud alert, coverage determination — is logged with timestamp, input data, output, and model version.</p>
+  </div></div>
+</div>
+
+<div class="steps-section" id="how-it-works">
+  <div class="section-title-row">
+    <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> From Kickoff to Production in <em>Under 7 weeks</em></h2>
+  </div>
+  <div class="steps-row">
+  <div class="step-item">
+    <div class="step-num">01</div>
+    <h4>Assess</h4>
+    <p>Identify high-volume, low-complexity claim types and underwriting bottlenecks. Map existing system integrations.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">02</div>
+    <h4>Configure</h4>
+    <p>Connect agents to Guidewire, Duck Creek, or your core system via pre-built ACORD-standard adapters.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">03</div>
+    <h4>Validate</h4>
+    <p>Shadow-mode testing against historical claims. Model validation documentation prepared for DOI submission.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">04</div>
+    <h4>Scale</h4>
+    <p>Phased rollout by line of business with STP rate dashboards, leakage monitoring, and model improvement.</p>
+  </div></div>
+</div>
+
+<div class="case-section" id="case-study">
+  <div class="section-title-row"><h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Customer Story</h2></div>
+  <div class="case-card-inner">
+    <div class="case-visual">
+      <div class="case-logo-tag">◆ Apex Mutual</div>
+      <div class="case-metrics"><div class="case-metric"><div class="v">68%</div><div class="l">STP rate</div></div><div class="case-metric"><div class="v">$9.1M</div><div class="l">Annual savings</div></div><div class="case-metric"><div class="v">6 mos</div><div class="l">To full rollout</div></div></div>
+    </div>
+    <div class="case-body">
+      <p class="case-quote">We went from a 6-day average settlement time to 4 hours for straight-through claims. Our adjusters now focus on complex losses where human judgment matters most — and customer satisfaction scores are up 31 points.</p>
+      <div class="case-attrib"><div class="case-ph">JR</div><div class="case-who"><b>James Rearden</b><span>Chief Claims Officer · Apex Mutual</span></div></div>
+      <a href="#" class="case-link">Read the full case study <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<div class="faq-section" id="faq">
+  <div class="section-title-row"><h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg> Frequently Asked</h2></div>
+  <div class="faq-list">
+  <details class="faq-item"open>
+    <summary class="faq-q">Which core insurance systems do you integrate with?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Native connectors for Guidewire ClaimCenter, PolicyCenter, and BillingCenter; Duck Creek Claims and Policy; Majesco ClaimVantage; and Sapiens. ISO/ACORD data standards supported natively.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">How do you handle state DOI model governance requirements?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Every AI model ships with a model card, bias analysis, back-testing results, and an explainability report formatted for state DOI examination and NAIC AI governance framework review.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">Can the fraud detection agent handle organized fraud rings?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Yes. The SIU agent uses graph analytics to surface connected entities across claims, policies, and claimants — detecting rings that single-claim rules miss entirely.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">What claim types can be fully automated?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Straightforward property (hail, wind, water), auto (glass, minor collision), and workers comp medical-only claims are ideal for straight-through processing. Complex injury and liability claims route to adjusters.</div>
+  </details></div>
+</div>
+
+<div class="cta-section" id="cta">
+  <div>
+    <div class="cta-eyebrow"><span class="dot"></span>Book a Demo</div>
+    <h2 class="cta-h2">See AI Factory on <em>your</em> data.</h2>
+    <p class="cta-p">A 30-minute working session with our insurance AI team. We'll pick one of your use cases and show you a production agent live.</p>
+    <div class="cta-checks"><div class="cta-check">No claim data needed for demo</div><div class="cta-check">DOI model docs included</div><div class="cta-check">MSA-friendly commercial terms</div></div>
+  </div>
+  <form class="cta-form-wrap cta-form">
+    <div class="cta-row">
+      <div class="cta-field"><label>First name</label><input type="text" placeholder="Alex"></div>
+      <div class="cta-field"><label>Last name</label><input type="text" placeholder="Morgan"></div>
+    </div>
+    <div class="cta-field"><label>Work email</label><input type="email" placeholder="you@company.com"></div>
+    <div class="cta-row">
+      <div class="cta-field"><label>Organization</label><input type="text" placeholder="Company Name"></div>
+      <div class="cta-field"><label>Role</label><select><option>Chief Claims Officer</option><option>Chief Underwriting Officer</option><option>CIO / CTO</option><option>Head of SIU / Fraud</option><option>Other</option></select></div>
+    </div>
+    <button type="submit" class="cta-submit">Book my 30-min session →</button>
+  </form>
+</div>
+</div><!-- /page-content -->
+</div><!-- /portal-main -->
+</div><!-- /portal-wrap -->
+
+<script src="js/core.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/portal.js"></script>
+<script>
+/* Mobile menu button visibility */
+document.getElementById('mobileMenuBtn').style.display = 'flex';
+
+const USE_CASES = [
+  {id:1,title:"Straight-Through Claims Processing",cat:"claims",lob:["property","auto"],src:["photos","weather"],goal:["cost"],desc:"End-to-end automation for low-complexity claims — FNOL, coverage check, damage assessment, settlement in hours.",status:"consumed",ver:"3.0",tone:"t1"},
+  {id:2,title:"Underwriting Submission Enricher",cat:"underwriting",lob:["commercial","specialty"],src:["third-party","aerial"],goal:["risk"],desc:"Enriches submissions with aerial imagery, IoT loss history, and third-party signals with explainable scores.",status:"trending",ver:"2.1",tone:"t2"},
+  {id:3,title:"SIU Fraud Ring Detector",cat:"fraud",lob:["auto","property"],src:["claims","network"],goal:["loss"],desc:"Graph-based detection of staged accidents, organized repair fraud, and claim farming across connected entities.",status:"new",ver:"1.6",tone:"t3"},
+  {id:4,title:"FNOL Conversational Agent",cat:"claims",lob:["all"],src:["voice","chat"],goal:["cx"],desc:"Omnichannel FNOL capture — extracts loss details, dispatches field adjusters, and provides real-time claim status.",status:"consumed",ver:"2.4",tone:"t4"},
+  {id:5,title:"Renewal Risk Scorer",cat:"underwriting",lob:["personal","commercial"],src:["loss","external"],goal:["risk"],desc:"Predicts adverse selection and lapse risk at renewal — surfaces accounts needing rate review or retention action.",status:"new",ver:"1.3",tone:"t5"},
+  {id:6,title:"Reinsurance Treaty Analyzer",cat:"actuarial",lob:["all"],src:["loss","treaty"],goal:["risk"],desc:"Automates treaty analysis, loss development, and ceded premium calculations with actuarial citations.",status:"trending",ver:"1.8",tone:"t6"},
+  {id:7,title:"Medical Bill Review AI",cat:"claims",lob:["health","wc"],src:["bills","clinical"],goal:["cost"],desc:"Detects billing errors, upcoding, and unbundling — reduces medical loss ratio by 8–14% per deployment.",status:"consumed",ver:"2.2",tone:"t1"},
+  {id:8,title:"Property Damage Estimator",cat:"claims",lob:["property"],src:["photos","aerial"],goal:["cost"],desc:"AI-powered repair cost estimation from drone and mobile photos — integrated with Xactimate and CoreLogic.",status:"trending",ver:"1.7",tone:"t2"},
+  {id:9,title:"Coverage Gap Advisor",cat:"distribution",lob:["personal","commercial"],src:["policy","crm"],goal:["revenue"],desc:"Identifies coverage gaps and surfaces upsell recommendations with needs-based rationale for agents.",status:"new",ver:"1.1",tone:"t3"},
+  {id:10,title:"Claims Leakage Monitor",cat:"claims",lob:["property","auto","wc"],src:["claims","reserves"],goal:["cost"],desc:"Flags reserve inadequacy, over-payment patterns, and litigation risk — prioritizes adjuster review queues.",status:"consumed",ver:"2.0",tone:"t4"},
+  {id:11,title:"Policy Document Extractor",cat:"underwriting",lob:["commercial","specialty"],src:["docs"],goal:["cost"],desc:"Extracts, classifies, and normalizes policy terms, exclusions, and endorsements from unstructured documents.",status:"trending",ver:"1.5",tone:"t5"},
+  {id:12,title:"Customer Retention Agent",cat:"distribution",lob:["personal"],src:["policy","behavior"],goal:["revenue"],desc:"Predicts non-renewal intent 90 days ahead and triggers personalized retention outreach with pricing guardrails.",status:"new",ver:"1.0",tone:"t6"},
+  {id:13,title:"Workers Comp Triage Agent",cat:"claims",lob:["wc"],src:["clinical","occupation"],goal:["cost"],desc:"Triages WC claims by severity and litigation risk — routes complex claims to senior adjusters within 2 hours.",status:"trending",ver:"1.4",tone:"t1"},
+];
+const categories = [
+  {id:"claims",label:"Claims Processing",count:5},
+  {id:"underwriting",label:"Underwriting",count:3},
+  {id:"fraud",label:"Fraud & SIU",count:1},
+  {id:"actuarial",label:"Actuarial",count:1},
+  {id:"distribution",label:"Distribution & CX",count:3},
+];
+const filters = {
+  lob:{label:"Line of business",items:[{value:"property",label:"Property",count:6},{value:"auto",label:"Auto",count:4},{value:"commercial",label:"Commercial lines",count:4},{value:"wc",label:"Workers comp",count:3},{value:"health",label:"Health / benefits",count:1},{value:"specialty",label:"Specialty / E&S",count:2}]},
+  src:{label:"Data source",items:[{value:"claims",label:"Claims data",count:7},{value:"photos",label:"Photos / aerial imagery",count:3},{value:"docs",label:"Policy documents",count:2},{value:"clinical",label:"Clinical / medical",count:2},{value:"external",label:"Third-party data",count:3}]},
+  goal:{label:"Business goal",items:[{value:"cost",label:"Reduce loss & expense",count:6},{value:"risk",label:"Improve risk selection",count:3},{value:"loss",label:"Prevent fraud losses",count:1},{value:"cx",label:"Improve customer experience",count:2},{value:"revenue",label:"Grow premium",count:2}]},
+};
+initGallery(USE_CASES, "Insurance", categories, filters);
+</script>
+</body>
+</html>

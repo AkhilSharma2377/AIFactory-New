@@ -1,0 +1,275 @@
+/* =========================================
+   AI Factory — Design System & Main Styles
+   ========================================= */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+/* ── CSS Variables (Light Mode) ── */
+:root {
+  /* Brand */
+  --brand-primary: #1a6bff;
+  --brand-secondary: #0d9488;
+  --brand-gradient: linear-gradient(135deg, #1a6bff 0%, #0d9488 100%);
+
+  /* Industry Accents (overridden per page) */
+  --accent:        #1a6bff;
+  --accent-light:  #e8f0ff;
+  --accent-dark:   #1250cc;
+  --accent-rgb:    26, 107, 255;
+
+  /* Surface */
+  --bg-body:       #f5f7fb;
+  --bg-surface:    #ffffff;
+  --bg-surface-2:  #f0f2f8;
+  --bg-sidebar:    #0b1e3d;
+  --bg-navbar:     #ffffff;
+
+  /* Text */
+  --text-primary:  #0d1526;
+  --text-secondary:#4a5568;
+  --text-muted:    #8a94a6;
+  --text-inverse:  #ffffff;
+
+  /* Border */
+  --border:        #e2e8f0;
+  --border-light:  #f0f4fa;
+
+  /* Shadows */
+  --shadow-sm:     0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+  --shadow-md:     0 4px 16px rgba(0,0,0,.08);
+  --shadow-lg:     0 8px 32px rgba(0,0,0,.12);
+  --shadow-accent: 0 4px 20px rgba(var(--accent-rgb), .25);
+
+  /* Typography */
+  --font-display: 'Sora', sans-serif;
+  --font-body:    'DM Sans', sans-serif;
+
+  /* Radius */
+  --radius-sm:  6px;
+  --radius-md:  12px;
+  --radius-lg:  20px;
+  --radius-xl:  28px;
+
+  /* Transitions */
+  --transition: .22s cubic-bezier(.4,0,.2,1);
+  --transition-slow: .38s cubic-bezier(.4,0,.2,1);
+
+  /* Sidebar */
+  --sidebar-width: 260px;
+  --sidebar-collapsed: 72px;
+}
+
+/* ── Dark Mode Variables ── */
+[data-theme="dark"] {
+  --bg-body:       #0b1120;
+  --bg-surface:    #111827;
+  --bg-surface-2:  #1a2336;
+  --bg-sidebar:    #070e1c;
+  --bg-navbar:     #111827;
+
+  --text-primary:  #f0f4ff;
+  --text-secondary:#94a3b8;
+  --text-muted:    #4a5568;
+
+  --border:        #1e2d45;
+  --border-light:  #1a2336;
+
+  --shadow-sm:     0 1px 3px rgba(0,0,0,.3);
+  --shadow-md:     0 4px 16px rgba(0,0,0,.4);
+  --shadow-lg:     0 8px 32px rgba(0,0,0,.5);
+}
+
+/* ── Industry Themes ── */
+[data-industry="healthcare"] {
+  --accent:       #0d9488;
+  --accent-light: #e6faf8;
+  --accent-dark:  #0a7a70;
+  --accent-rgb:   13, 148, 136;
+}
+[data-industry="financial"] {
+  --accent:       #1a6bff;
+  --accent-light: #e8f0ff;
+  --accent-dark:  #1250cc;
+  --accent-rgb:   26, 107, 255;
+}
+[data-industry="manufacturing"] {
+  --accent:       #f97316;
+  --accent-light: #fff3e8;
+  --accent-dark:  #d95f00;
+  --accent-rgb:   249, 115, 22;
+}
+[data-industry="retail"] {
+  --accent:       #9333ea;
+  --accent-light: #f3e8ff;
+  --accent-dark:  #7c22d4;
+  --accent-rgb:   147, 51, 234;
+}
+[data-industry="insurance"] {
+  --accent:       #4f46e5;
+  --accent-light: #eef2ff;
+  --accent-dark:  #3d35c4;
+  --accent-rgb:   79, 70, 229;
+}
+
+/* ── Reset & Base ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg-body);
+  color: var(--text-primary);
+  transition: background var(--transition-slow), color var(--transition-slow);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-primary);
+}
+
+a { text-decoration: none; color: var(--accent); transition: color var(--transition); }
+a:hover { color: var(--accent-dark); }
+
+img { max-width: 100%; display: block; }
+
+/* ── Utility ── */
+.text-accent { color: var(--accent) !important; }
+.bg-accent   { background: var(--accent) !important; }
+.border-accent { border-color: var(--accent) !important; }
+
+.section-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: .75rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: var(--accent-light);
+  padding: 4px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.card-aif {
+  background: var(--bg-surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+.card-aif:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
+  border-color: rgba(var(--accent-rgb), .3);
+}
+
+.btn-accent {
+  background: var(--accent);
+  color: #fff !important;
+  border: none;
+  border-radius: var(--radius-md);
+  padding: 10px 24px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: .9rem;
+  cursor: pointer;
+  transition: background var(--transition), box-shadow var(--transition), transform var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-accent:hover {
+  background: var(--accent-dark);
+  box-shadow: var(--shadow-accent);
+  transform: translateY(-1px);
+  color: #fff !important;
+}
+
+.btn-outline-accent {
+  background: transparent;
+  color: var(--accent) !important;
+  border: 1.5px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 9px 22px;
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: .9rem;
+  cursor: pointer;
+  transition: all var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-outline-accent:hover {
+  background: var(--accent);
+  color: #fff !important;
+  box-shadow: var(--shadow-accent);
+}
+
+/* ── Theme Toggle ── */
+.theme-toggle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid var(--border);
+  background: var(--bg-surface-2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  transition: all var(--transition);
+  color: var(--text-secondary);
+}
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--accent-light);
+}
+
+/* ── Animations ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes scaleIn {
+  from { opacity: 0; transform: scale(.94); }
+  to   { opacity: 1; transform: scale(1); }
+}
+@keyframes pulse-dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.4); opacity: .7; }
+}
+@keyframes slideRight {
+  from { width: 0; }
+  to   { width: 100%; }
+}
+
+.anim-fade-up   { animation: fadeUp .6s ease both; }
+.anim-fade-in   { animation: fadeIn .5s ease both; }
+.anim-scale-in  { animation: scaleIn .5s ease both; }
+
+.delay-1 { animation-delay: .1s; }
+.delay-2 { animation-delay: .2s; }
+.delay-3 { animation-delay: .3s; }
+.delay-4 { animation-delay: .4s; }
+.delay-5 { animation-delay: .5s; }
+.delay-6 { animation-delay: .6s; }
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-muted); }

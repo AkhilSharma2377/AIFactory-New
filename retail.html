@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="ind-retail">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Factory · Retail</title>
+<link rel="stylesheet" href="css/portal.css">
+</head>
+<body class="ind-retail">
+<div class="portal-wrap">
+
+
+  <div class="sb-overlay" id="sbOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-brand">
+      <div class="sb-logo-mark">AI</div>
+      <div class="sb-brand-text">
+        <strong>AI Factory™</strong>
+        <span>Enterprise Platform</span>
+      </div>
+    </div>
+    <div class="sb-industry">
+      <div class="sb-industry-icon">🛍️</div>
+      <div class="sb-industry-text">
+        <strong>Retail</strong>
+        <span>Industry Dashboard</span>
+      </div>
+    </div>
+    <nav class="sb-nav">
+      <div class="sb-section-label">Overview</div>
+    <a class="sb-item active" href="retail.html" data-page="retail.html" data-label="Retail Dashboard">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span class="sb-label">Retail Dashboard</span>
+    </a><div class="sb-section-label">Content</div>
+    <a class="sb-item" href="#agents" data-label="Featured Agents">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+      <span class="sb-label">Featured Agents</span>
+    </a>
+    <a class="sb-item" href="#gallery" data-label="Use Cases">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+      <span class="sb-label">Use Cases</span>
+    </a><div class="sb-section-label">Trust</div>
+    <a class="sb-item" href="#compliance" data-label="Compliance">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <span class="sb-label">Compliance</span>
+    </a>
+    <a class="sb-item" href="#how-it-works" data-label="How It Works">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <span class="sb-label">How It Works</span>
+    </a>
+    <a class="sb-item" href="#case-study" data-label="Case Study">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+      <span class="sb-label">Case Study</span>
+    </a><div class="sb-section-label">Support</div>
+    <a class="sb-item" href="#faq" data-label="FAQ">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
+      <span class="sb-label">FAQ</span>
+    </a>
+    <a class="sb-item" href="#cta" data-label="Book Demo">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg></span>
+      <span class="sb-label">Book Demo</span>
+    </a>
+      <div class="sb-divider"></div>
+      <div class="sb-section-label">Industries</div>
+      
+    <a class="sb-item" href="healthcare.html" data-label="Healthcare" data-page="healthcare.html">
+      <span class="sb-icon" style="font-size:15px;">🏥</span>
+      <span class="sb-label">Healthcare</span>
+    </a>
+    <a class="sb-item" href="financial.html" data-label="Financial" data-page="financial.html">
+      <span class="sb-icon" style="font-size:15px;">💳</span>
+      <span class="sb-label">Financial</span>
+    </a>
+    <a class="sb-item" href="manufacturing.html" data-label="Manufacturing" data-page="manufacturing.html">
+      <span class="sb-icon" style="font-size:15px;">🏭</span>
+      <span class="sb-label">Manufacturing</span>
+    </a>
+    <a class="sb-item active" href="retail.html" data-label="Retail" data-page="retail.html">
+      <span class="sb-icon" style="font-size:15px;">🛍️</span>
+      <span class="sb-label">Retail</span>
+    </a>
+    <a class="sb-item" href="insurance.html" data-label="Insurance" data-page="insurance.html">
+      <span class="sb-icon" style="font-size:15px;">🛡️</span>
+      <span class="sb-label">Insurance</span>
+    </a>
+      <div class="sb-divider"></div>
+      <a class="sb-item" href="landing-page.html" data-label="All Industries">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+        <span class="sb-label">All Industries</span>
+      </a>
+      <a class="sb-item js-logout" href="#" data-label="Sign Out">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg></span>
+        <span class="sb-label">Sign Out</span>
+      </a>
+    </nav>
+    <div class="sb-footer">
+      <div class="sb-user">
+        <div class="sb-avatar js-user-initials">AM</div>
+        <div class="sb-user-info">
+          <div class="sb-user-name js-user-name">Alex Morgan</div>
+          <div class="sb-user-role">Platform Admin</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+<div class="portal-main" id="portalMain">
+
+  <header class="topbar" id="topbar">
+    <button class="tb-collapse-btn" id="collapseBtn" title="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <button class="tb-collapse-btn" id="mobileMenuBtn" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <div class="tb-breadcrumb">
+      <a href="landing-page.html">AI Factory</a>
+      <span class="sep">/</span>
+      <span class="current">Retail</span>
+    </div>
+    <div class="tb-spacer"></div>
+    <div class="tb-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input placeholder="Search retail use cases…">
+    </div>
+    <div class="tb-actions">
+      <button class="tb-icon-btn" title="Notifications">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
+        <span class="tb-badge"></span>
+      </button>
+      <button class="tb-icon-btn" title="Help">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
+      </button>
+      <button class="theme-toggle-btn" title="Toggle dark/light mode">🌙</button>
+      <div class="tb-user-chip">
+        <div class="tb-chip-avatar js-user-initials">AM</div>
+        <span class="tb-chip-name js-user-name">Alex Morgan</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+  </header>
+
+<div class="page-content">
+
+<div class="page-header">
+  <div class="page-header-left">
+    <div class="page-eyebrow"><span class="dot"></span>AI Factory · Retail</div>
+    <h1 class="page-title">Retail AI Platform</h1>
+    <p class="page-subtitle">Deploy hyper-personalization, demand forecasting, and inventory intelligence across all channels — w…</p>
+  </div>
+  <div class="page-actions">
+    <a href="landing-page.html" class="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 12H5M12 5l-7 7 7 7"/></svg> All Industries</a>
+    <a href="#cta" class="btn btn-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg> Book Demo</a>
+  </div>
+</div>
+
+<div class="industry-hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span class="dot"></span>AI Factory · Retail</div>
+    <h1 class="hero-h1">AI agents purpose-built for <em>personalization, demand &amp; store operations</em>.</h1>
+    <p class="hero-sub">Deploy hyper-personalization, demand forecasting, and inventory intelligence across all channels — with explainable recommendations, real-time pricing, and measurable revenue lift from day one.</p>
+    <div class="hero-cta-row">
+      <a href="#cta" class="btn btn-primary btn-sm">Book a 30-min demo →</a>
+      <a href="#gallery" class="btn btn-ghost btn-sm">Explore use cases</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item"><b>160+</b> production deployments</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item">SOC 2 · PCI-DSS · GDPR</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item">Azure · AWS · <b>GCP</b></div>
+    </div>
+  </div>
+  <div class="chat-widget">
+    <div class="chat-head">
+      <div class="chat-head-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg></div>
+      <div><div class="chat-head-name">Product Recommendation Engine</div><div class="chat-head-role">v3.1</div></div>
+      <div class="chat-live">Live</div>
+    </div>
+    <div class="chat-msgs">
+      <div class="chat-msg u">Hyper-personalized recommendations using collaborative filte…</div>
+      <div class="chat-msg b"><b>Analysis complete.</b> ring, session signals, and inventory availability — served in under 50…<br><span class="chat-pill">✓ Retail AI Engine</span></div>
+    </div>
+    <div class="chat-float-row">
+      <div class="chat-float">
+        <div class="chat-float-label">Revenue lift from AI-pow</div>
+        <div class="chat-float-val">+34</div>
+        <div class="chat-float-delta">10 e-commerce deployments</div>
+        <div class="chat-mini-bars"><span style="height:55%"></span><span style="height:70%"></span><span style="height:45%"></span><span style="height:35%"></span><span style="height:22%"></span><span style="height:16%"></span><span style="height:100%"></span></div>
+      </div>
+      <div class="chat-float">
+        <div class="chat-float-label">Reduction in inventory o</div>
+        <div class="chat-float-val">28</div>
+        <div class="chat-float-delta">8 omnichannel retailers</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trust-row">
+  <span class="trust-label">Trusted by</span>
+  <div class="trust-logos"><span class="trust-logo">◆ NexaRetail</span><div class="trust-sep"></div><span class="trust-logo">◈ Volta Commerce</span><div class="trust-sep"></div><span class="trust-logo">■ Meridian Brands</span><div class="trust-sep"></div><span class="trust-logo">● ClearCart</span><div class="trust-sep"></div><span class="trust-logo">∿ PureStyle</span></div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg></div>
+    <div class="kpi-value">+34<sub>%</sub></div>
+    <div class="kpi-label">Revenue lift from AI-powered personalization vs. control group</div>
+    <div class="kpi-source">10 e-commerce deployments</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/></svg></div>
+    <div class="kpi-value">28<sub>%</sub></div>
+    <div class="kpi-label">Reduction in inventory overstock saving $3.4M per retailer annually</div>
+    <div class="kpi-source">8 omnichannel retailers</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/></svg></div>
+    <div class="kpi-value">4.8<sub>x</sub></div>
+    <div class="kpi-label">Click-through rate on AI recommendations vs. manual curation</div>
+    <div class="kpi-source">6-month A/B test</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <div class="kpi-value">92<sub>%</sub></div>
+    <div class="kpi-label">Demand forecast accuracy at SKU level 13 weeks out</div>
+    <div class="kpi-source">Grocery chain · 800 stores</div>
+  </div></div>
+
+<div id="agents">
+<div class="section-title-row">
+  <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg> Featured Agents</h2>
+  <a href="#gallery" class="btn btn-ghost btn-sm">View all →</a>
+</div>
+<p class="section-desc">Each agent integrates with Shopify, Salesforce Commerce, SAP Retail, or your custom stack — no rip-and-replace required.</p>
+<div class="agents-grid">
+  <article class="agent-card">
+    <div class="agent-thumb t1">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 14c0 4-3.5 6-7 6s-7-2-7-6V6c0-1 1-2 2-2h3"/><path d="M14 4h3c1 0 2 1 2 2v8"/><circle cx="19" cy="18" r="2"/><path d="M12 4v6M9 7h6"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v3.1</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Product Recommendation Engine</div>
+      <div class="agent-meta">Industry: <b>E-commerce · In-store</b></div>
+      <p class="agent-desc">Hyper-personalized recommendations using collaborative filtering, session signals, and inventory availability — served in under 50ms at any scale.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t2">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v2.0</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Demand Forecasting Agent</div>
+      <div class="agent-meta">Industry: <b>Merchandising · Supply Chain</b></div>
+      <p class="agent-desc">SKU-level demand forecasts at 92% accuracy 13 weeks out — factors promotions, seasonality, weather, and competitive pricing signals.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t3">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v1.5</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Dynamic Pricing Engine</div>
+      <div class="agent-meta">Industry: <b>Pricing · Revenue Management</b></div>
+      <p class="agent-desc">Real-time price optimization across channels balancing margin, competitive position, and promotional objectives within your guardrails.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t4">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M21 15a4 4 0 01-4 4H7l-4 4V5a4 4 0 014-4h10a4 4 0 014 4z"/><circle cx="9" cy="10" r="1"/><circle cx="13" cy="10" r="1"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v2.3</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Churn Prediction Agent</div>
+      <div class="agent-meta">Industry: <b>CRM · Loyalty</b></div>
+      <p class="agent-desc">Identifies at-risk customers 30 days in advance with personalized retention offer recommendations and ready-to-send outreach copy.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t5">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/><circle cx="8" cy="16" r="2"/><circle cx="14" cy="10" r="2"/><circle cx="19" cy="7" r="2"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v1.2</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Store Ops Assistant</div>
+      <div class="agent-meta">Industry: <b>Operations · Associates</b></div>
+      <p class="agent-desc">Conversational AI for store associates — answers product questions, checks inventory across stores, processes returns, and logs feedback.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t6">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M10 3L3 10l6 6 7-7z"/><path d="M16 6l5 5-7 7-3-3"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v1.4</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Returns Fraud Detector</div>
+      <div class="agent-meta">Industry: <b>Loss Prevention</b></div>
+      <p class="agent-desc">Identifies abnormal return patterns — serial returners, receipt fraud, and wardrobing — before credits are issued, reducing return fraud by 40%.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article></div>
+</div>
+
+<div class="gallery-wrap" id="gallery">
+  <div class="gallery-header">
+    <div class="section-title-row" style="margin-bottom:14px;">
+      <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg> Full Use-Case Gallery</h2>
+    </div>
+    <p class="section-desc" style="margin-bottom:14px;">Filter by channel, category, data source, or business objective. All assets include a working POC and a revenue impact model.</p>
+  </div>
+  <div class="gallery-controls">
+    <div class="gallery-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input id="searchInput" placeholder="Search retail use cases…">
+      <span class="count-badge" id="count">0</span>
+    </div>
+    <div class="chip-row" id="categoryChips"></div>
+  </div>
+  <div class="gallery-body">
+    <div class="filter-panel" id="filterSidebar"></div>
+    <div class="gallery-grid-wrap"><div class="gallery-grid" id="galleryGrid"></div></div>
+  </div>
+</div>
+
+<div class="compliance-section" id="compliance">
+  <div class="section-title-row">
+    <h2 style="color:white;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg> Trust &amp; Security</h2>
+  </div>
+  <p class="compliance-desc">Customer PII and transaction data stays in your cloud tenant. No data shared with third parties for model training or benchmarking.</p>
+  <div class="badge-row">
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+    <div class="badge-name">PCI-DSS Level 1</div>
+    <div class="badge-desc">Highest tier payment security</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+    <div class="badge-name">SOC 2 Type II</div>
+    <div class="badge-desc">Continuous third-party audit</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <div class="badge-name">GDPR Compliant</div>
+    <div class="badge-desc">EU data residency available</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/></svg></div>
+    <div class="badge-name">CCPA Ready</div>
+    <div class="badge-desc">Consumer privacy rights enforced</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6-9 6z"/><path d="M3 9v6l9 6 9-6V9"/></svg></div>
+    <div class="badge-name">ISO 27001</div>
+    <div class="badge-desc">Information security certified</div>
+  </div></div>
+  <div class="promise-row">
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/></svg></div>
+    <h4>Zero data sharing with competitors</h4>
+    <p>Your customer behavior, pricing, and inventory data is never used to train shared models or benchmarked against competitors — ever.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 4-8"/></svg></div>
+    <h4>Explainable recommendations</h4>
+    <p>Every product recommendation includes the signals that drove it — purchase history, affinity clusters, margin targets — ready for merchant review and override.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+    <h4>PII stays in your environment</h4>
+    <p>Customer identity data is processed entirely in your cloud tenant. Agents consume anonymized behavioral signals for inference.</p>
+  </div></div>
+</div>
+
+<div class="steps-section" id="how-it-works">
+  <div class="section-title-row">
+    <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> From Kickoff to Production in <em>Under 6 weeks</em></h2>
+  </div>
+  <div class="steps-row">
+  <div class="step-item">
+    <div class="step-num">01</div>
+    <h4>Discover</h4>
+    <p>Map your top revenue and operational pain points. Prioritize use cases by revenue impact and data availability.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">02</div>
+    <h4>Connect</h4>
+    <p>Integrate with Shopify, Salesforce Commerce, SAP Retail, or your custom stack via pre-built connectors.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">03</div>
+    <h4>A/B Test</h4>
+    <p>Run recommendation and pricing agents against control groups to validate revenue lift before full rollout.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">04</div>
+    <h4>Scale</h4>
+    <p>Roll out across all channels with performance dashboards, A/B reporting, and continuous optimization.</p>
+  </div></div>
+</div>
+
+<div class="case-section" id="case-study">
+  <div class="section-title-row"><h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Customer Story</h2></div>
+  <div class="case-card-inner">
+    <div class="case-visual">
+      <div class="case-logo-tag">◆ NexaRetail</div>
+      <div class="case-metrics"><div class="case-metric"><div class="v">+34%</div><div class="l">Revenue lift</div></div><div class="case-metric"><div class="v">$22M</div><div class="l">Incremental yr-1</div></div><div class="case-metric"><div class="v">6 wks</div><div class="l">Go-live</div></div></div>
+    </div>
+    <div class="case-body">
+      <p class="case-quote">The personalization engine paid for itself in 6 weeks. Our online conversion rate went from 2.4% to 3.9%, and our email revenue doubled because we finally stopped sending irrelevant campaigns.</p>
+      <div class="case-attrib"><div class="case-ph">LM</div><div class="case-who"><b>Lisa Martinez</b><span>Chief Digital Officer · NexaRetail</span></div></div>
+      <a href="#" class="case-link">Read the full case study <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<div class="faq-section" id="faq">
+  <div class="section-title-row"><h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg> Frequently Asked</h2></div>
+  <div class="faq-list">
+  <details class="faq-item"open>
+    <summary class="faq-q">Which commerce platforms and OMS systems do you integrate with?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Pre-built connectors for Shopify, Salesforce Commerce Cloud, Magento, SAP Retail, Oracle Retail, and Manhattan OMS. Custom integrations via REST API ship in 1–2 weeks.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">How do you handle cold-start for new customers?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">New visitor recommendations use collaborative filtering bootstrapped from segment-level data. Accuracy reaches 85% of returning-user quality after just 3 sessions.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">Can the demand forecasting agent handle promotional events and seasonality?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Yes. The model is trained on your full promotional calendar, seasonal indices, and external signals like weather and school holidays.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">How does dynamic pricing stay compliant with MAP policies?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">MAP floors, promotional windows, and competitor price floors are configurable constraints — the agent never breaches guardrails you set.</div>
+  </details></div>
+</div>
+
+<div class="cta-section" id="cta">
+  <div>
+    <div class="cta-eyebrow"><span class="dot"></span>Book a Demo</div>
+    <h2 class="cta-h2">See AI Factory on <em>your</em> data.</h2>
+    <p class="cta-p">A 30-minute working session with our retail AI team. We'll pick one of your use cases and show you a production agent live.</p>
+    <div class="cta-checks"><div class="cta-check">No PII required for demo</div><div class="cta-check">Revenue impact model included</div><div class="cta-check">Connects in days not months</div></div>
+  </div>
+  <form class="cta-form-wrap cta-form">
+    <div class="cta-row">
+      <div class="cta-field"><label>First name</label><input type="text" placeholder="Alex"></div>
+      <div class="cta-field"><label>Last name</label><input type="text" placeholder="Morgan"></div>
+    </div>
+    <div class="cta-field"><label>Work email</label><input type="email" placeholder="you@company.com"></div>
+    <div class="cta-row">
+      <div class="cta-field"><label>Organization</label><input type="text" placeholder="Company Name"></div>
+      <div class="cta-field"><label>Role</label><select><option>Chief Digital Officer</option><option>VP Merchandising / Pricing</option><option>Head of E-commerce</option><option>VP Supply Chain</option><option>Other</option></select></div>
+    </div>
+    <button type="submit" class="cta-submit">Book my 30-min session →</button>
+  </form>
+</div>
+</div><!-- /page-content -->
+</div><!-- /portal-main -->
+</div><!-- /portal-wrap -->
+
+<script src="js/core.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/portal.js"></script>
+<script>
+/* Mobile menu button visibility */
+document.getElementById('mobileMenuBtn').style.display = 'flex';
+
+const USE_CASES = [
+  {id:1,title:"Personalized Homepage",cat:"personalization",channel:["ecom","app"],src:["behavior","purchase"],goal:["revenue"],desc:"Real-time homepage personalization — lifts conversion 18–34% vs. static merchandising.",status:"consumed",ver:"3.1",tone:"t1"},
+  {id:2,title:"SKU Demand Forecasting",cat:"inventory",channel:["all"],src:["sales","external"],goal:["ops"],desc:"92% accurate 13-week SKU forecasts factoring promotions, weather, and competitive pricing.",status:"trending",ver:"2.0",tone:"t2"},
+  {id:3,title:"Dynamic Markdown Optimizer",cat:"pricing",channel:["ecom","store"],src:["inventory","sales"],goal:["revenue"],desc:"Optimizes markdown timing and depth to maximize sell-through while protecting margin.",status:"new",ver:"1.5",tone:"t3"},
+  {id:4,title:"Churn Predictor",cat:"crm",channel:["email","app"],src:["purchase","behavior"],goal:["retention"],desc:"Identifies lapsing customers 30 days ahead with personalized retention offers.",status:"consumed",ver:"2.3",tone:"t4"},
+  {id:5,title:"Returns Fraud Detector",cat:"loss",channel:["ecom","store"],src:["returns","purchase"],goal:["loss"],desc:"Flags serial returners, receipt manipulation, and wardrobing before credits are processed.",status:"trending",ver:"1.4",tone:"t5"},
+  {id:6,title:"Associate Assist Copilot",cat:"ops",channel:["store"],src:["catalog","inventory"],goal:["ops"],desc:"Conversational AI for store associates — answers product Qs, checks stock, processes exchanges.",status:"new",ver:"1.2",tone:"t6"},
+  {id:7,title:"Cross-sell Recommendation Engine",cat:"personalization",channel:["ecom","email"],src:["purchase","browse"],goal:["revenue"],desc:"Surfaces complementary products at checkout — average order value lift of 14%.",status:"consumed",ver:"2.8",tone:"t1"},
+  {id:8,title:"Replenishment AI",cat:"inventory",channel:["all"],src:["sales","inventory"],goal:["ops"],desc:"Automated replenishment orders triggered by AI-predicted stockout risk — reduces stockouts 31%.",status:"trending",ver:"1.7",tone:"t2"},
+  {id:9,title:"Competitive Price Monitor",cat:"pricing",channel:["ecom"],src:["external","catalog"],goal:["revenue"],desc:"Tracks competitor pricing across 50+ retailers and triggers repricing within your guardrails.",status:"new",ver:"1.0",tone:"t3"},
+  {id:10,title:"CLV Model",cat:"crm",channel:["all"],src:["purchase","behavior"],goal:["retention"],desc:"Predicts 12-month customer lifetime value to optimize acquisition spend and loyalty tiers.",status:"consumed",ver:"2.1",tone:"t4"},
+  {id:11,title:"Size Recommendation Agent",cat:"personalization",channel:["ecom","app"],src:["returns","purchase"],goal:["revenue"],desc:"Reduces apparel return rate 22% through AI-powered size and fit recommendations.",status:"trending",ver:"1.6",tone:"t5"},
+  {id:12,title:"Email Campaign Optimizer",cat:"crm",channel:["email"],src:["purchase","behavior"],goal:["retention"],desc:"Personalizes email send time, subject line, and products per recipient — lifts email revenue 2.1x.",status:"consumed",ver:"2.4",tone:"t6"},
+  {id:13,title:"Store Traffic Predictor",cat:"ops",channel:["store"],src:["pos","external"],goal:["ops"],desc:"Predicts hourly store traffic 7 days ahead to optimize staffing and reduce labor cost 11%.",status:"new",ver:"1.0",tone:"t1"},
+];
+const categories = [
+  {id:"personalization",label:"Personalization",count:4},
+  {id:"inventory",label:"Inventory & Supply",count:2},
+  {id:"pricing",label:"Pricing",count:2},
+  {id:"crm",label:"CRM & Loyalty",count:3},
+  {id:"ops",label:"Store Operations",count:2},
+  {id:"loss",label:"Loss Prevention",count:1},
+];
+const filters = {
+  channel:{label:"Channel",items:[{value:"ecom",label:"E-commerce",count:8},{value:"store",label:"Physical store",count:6},{value:"app",label:"Mobile app",count:4},{value:"email",label:"Email / CRM",count:4},{value:"all",label:"Omnichannel",count:2}]},
+  src:{label:"Data source",items:[{value:"purchase",label:"Purchase history",count:9},{value:"behavior",label:"Browse / session data",count:7},{value:"inventory",label:"Inventory / OMS",count:5},{value:"external",label:"External signals",count:3},{value:"returns",label:"Returns data",count:2}]},
+  goal:{label:"Business goal",items:[{value:"revenue",label:"Grow revenue",count:7},{value:"retention",label:"Improve retention",count:3},{value:"ops",label:"Reduce operational cost",count:4},{value:"loss",label:"Reduce losses",count:1}]},
+};
+initGallery(USE_CASES, "Retail", categories, filters);
+</script>
+</body>
+</html>

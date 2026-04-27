@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="ind-healthcare">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Factory · Healthcare</title>
+<link rel="stylesheet" href="css/portal.css">
+</head>
+<body class="ind-healthcare">
+<div class="portal-wrap">
+
+
+  <div class="sb-overlay" id="sbOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-brand">
+      <div class="sb-logo-mark">AI</div>
+      <div class="sb-brand-text">
+        <strong>AI Factory™</strong>
+        <span>Enterprise Platform</span>
+      </div>
+    </div>
+    <div class="sb-industry">
+      <div class="sb-industry-icon">🏥</div>
+      <div class="sb-industry-text">
+        <strong>Healthcare</strong>
+        <span>Industry Dashboard</span>
+      </div>
+    </div>
+    <nav class="sb-nav">
+      <div class="sb-section-label">Overview</div>
+    <a class="sb-item active" href="healthcare.html" data-page="healthcare.html" data-label="Healthcare Dashboard">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span class="sb-label">Healthcare Dashboard</span>
+    </a><div class="sb-section-label">Content</div>
+    <a class="sb-item" href="#agents" data-label="Featured Agents">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+      <span class="sb-label">Featured Agents</span>
+    </a>
+    <a class="sb-item" href="#gallery" data-label="Use Cases">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+      <span class="sb-label">Use Cases</span>
+    </a><div class="sb-section-label">Trust</div>
+    <a class="sb-item" href="#compliance" data-label="Compliance">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <span class="sb-label">Compliance</span>
+    </a>
+    <a class="sb-item" href="#how-it-works" data-label="How It Works">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <span class="sb-label">How It Works</span>
+    </a>
+    <a class="sb-item" href="#case-study" data-label="Case Study">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+      <span class="sb-label">Case Study</span>
+    </a><div class="sb-section-label">Support</div>
+    <a class="sb-item" href="#faq" data-label="FAQ">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
+      <span class="sb-label">FAQ</span>
+    </a>
+    <a class="sb-item" href="#cta" data-label="Book Demo">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg></span>
+      <span class="sb-label">Book Demo</span>
+    </a>
+      <div class="sb-divider"></div>
+      <div class="sb-section-label">Industries</div>
+      
+    <a class="sb-item active" href="healthcare.html" data-label="Healthcare" data-page="healthcare.html">
+      <span class="sb-icon" style="font-size:15px;">🏥</span>
+      <span class="sb-label">Healthcare</span>
+    </a>
+    <a class="sb-item" href="financial.html" data-label="Financial" data-page="financial.html">
+      <span class="sb-icon" style="font-size:15px;">💳</span>
+      <span class="sb-label">Financial</span>
+    </a>
+    <a class="sb-item" href="manufacturing.html" data-label="Manufacturing" data-page="manufacturing.html">
+      <span class="sb-icon" style="font-size:15px;">🏭</span>
+      <span class="sb-label">Manufacturing</span>
+    </a>
+    <a class="sb-item" href="retail.html" data-label="Retail" data-page="retail.html">
+      <span class="sb-icon" style="font-size:15px;">🛍️</span>
+      <span class="sb-label">Retail</span>
+    </a>
+    <a class="sb-item" href="insurance.html" data-label="Insurance" data-page="insurance.html">
+      <span class="sb-icon" style="font-size:15px;">🛡️</span>
+      <span class="sb-label">Insurance</span>
+    </a>
+      <div class="sb-divider"></div>
+      <a class="sb-item" href="landing-page.html" data-label="All Industries">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+        <span class="sb-label">All Industries</span>
+      </a>
+      <a class="sb-item js-logout" href="#" data-label="Sign Out">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg></span>
+        <span class="sb-label">Sign Out</span>
+      </a>
+    </nav>
+    <div class="sb-footer">
+      <div class="sb-user">
+        <div class="sb-avatar js-user-initials">AM</div>
+        <div class="sb-user-info">
+          <div class="sb-user-name js-user-name">Alex Morgan</div>
+          <div class="sb-user-role">Platform Admin</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+<div class="portal-main" id="portalMain">
+
+  <header class="topbar" id="topbar">
+    <button class="tb-collapse-btn" id="collapseBtn" title="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <button class="tb-collapse-btn" id="mobileMenuBtn" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <div class="tb-breadcrumb">
+      <a href="landing-page.html">AI Factory</a>
+      <span class="sep">/</span>
+      <span class="current">Healthcare</span>
+    </div>
+    <div class="tb-spacer"></div>
+    <div class="tb-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input placeholder="Search healthcare use cases…">
+    </div>
+    <div class="tb-actions">
+      <button class="tb-icon-btn" title="Notifications">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
+        <span class="tb-badge"></span>
+      </button>
+      <button class="tb-icon-btn" title="Help">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
+      </button>
+      <button class="theme-toggle-btn" title="Toggle dark/light mode">🌙</button>
+      <div class="tb-user-chip">
+        <div class="tb-chip-avatar js-user-initials">AM</div>
+        <span class="tb-chip-name js-user-name">Alex Morgan</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+  </header>
+
+<div class="page-content">
+
+<!-- Page header -->
+<div class="page-header">
+  <div class="page-header-left">
+    <div class="page-eyebrow"><span class="dot"></span>AI Factory · Healthcare</div>
+    <h1 class="page-title">Healthcare AI Platform</h1>
+    <p class="page-subtitle">HIPAA-ready agents for clinical documentation, prior auth, radiology triage &amp; patient engagement</p>
+  </div>
+  <div class="page-actions">
+    <a href="landing-page.html" class="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 12H5M12 5l-7 7 7 7"/></svg> All Industries</a>
+    <a href="#cta" class="btn btn-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg> Book Demo</a>
+  </div>
+</div>
+
+<!-- Hero widget -->
+<div class="industry-hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span class="dot"></span>AI Factory · Healthcare</div>
+    <h1 class="hero-h1">AI agents purpose-built for <em>clinical &amp; administrative</em> workflows.</h1>
+    <p class="hero-sub">Deploy HIPAA-ready copilots for prior authorization, clinical documentation, radiology triage, and patient intake — on your cloud, with auditable guardrails and evidence-grade accuracy.</p>
+    <div class="hero-cta-row">
+      <a href="#cta" class="btn btn-primary btn-sm">Book a 30-min demo →</a>
+      <a href="#gallery" class="btn btn-ghost btn-sm">Explore 47 use cases</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item"><b>263</b> production agents</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item"><b>HIPAA</b> · HITRUST · SOC 2</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item">Azure · AWS · <b>GCP</b></div>
+    </div>
+  </div>
+  <div class="chat-widget">
+    <div class="chat-head">
+      <div class="chat-head-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2L3 7v6c0 5.5 3.8 10.7 9 12 5.2-1.3 9-6.5 9-12V7z"/><path d="M9 12l2 2 4-4"/></svg></div>
+      <div><div class="chat-head-name">Clinical Notes Copilot</div><div class="chat-head-role">EHR · Epic · v3.2</div></div>
+      <div class="chat-live">Live</div>
+    </div>
+    <div class="chat-msgs">
+      <div class="chat-msg u">Summarize today's visit for Mr. Alvarez (MRN 48210).</div>
+      <div class="chat-msg b"><b>Summary generated.</b> 68yo male, T2 diabetes follow-up. A1c 8.4→7.6. Continue metformin 1000mg BID; add SGLT2 inhibitor.<br><span class="chat-pill">✓ Grounded in 4 chart sources</span></div>
+      <div class="chat-msg u">Draft after-visit summary for the patient portal.</div>
+    </div>
+    <div class="chat-float-row">
+      <div class="chat-float">
+        <div class="chat-float-label">Prior auth turnaround</div>
+        <div class="chat-float-val">4.2<span style="font-size:11px;">hrs</span></div>
+        <div class="chat-float-delta">↓ 73% vs. baseline</div>
+        <div class="chat-mini-bars"><span style="height:55%"></span><span style="height:70%"></span><span style="height:45%"></span><span style="height:35%"></span><span style="height:22%"></span><span style="height:16%"></span><span style="height:100%"></span></div>
+      </div>
+      <div class="chat-float">
+        <div class="chat-float-label">Clinician hrs saved/wk</div>
+        <div class="chat-float-val">+1,240</div>
+        <div class="chat-float-delta">across 6 facilities</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Trust strip -->
+<div class="trust-row">
+  <span class="trust-label">Trusted by</span>
+  <div class="trust-logos">
+    <span class="trust-logo">◆ MeridianHealth</span><div class="trust-sep"></div>
+    <span class="trust-logo">◈ Cascadia Medical</span><div class="trust-sep"></div>
+    <span class="trust-logo">■ NorthStar Payer</span><div class="trust-sep"></div>
+    <span class="trust-logo">● Evergreen Clinics</span><div class="trust-sep"></div>
+    <span class="trust-logo">∿ HelixRx</span>
+  </div>
+</div>
+
+<!-- KPIs -->
+<div class="kpi-grid">
+
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 14c0 4-3.5 6-7 6s-7-2-7-6V6c0-1 1-2 2-2h3"/><path d="M14 4h3c1 0 2 1 2 2v8"/><circle cx="19" cy="18" r="2"/><path d="M12 4v6M9 7h6"/></svg></div>
+    <div class="kpi-value">73<sub>%</sub></div>
+    <div class="kpi-label">Reduction in prior-authorization turnaround</div>
+    <div class="kpi-source">Payer deployment · n=4</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <div class="kpi-value">2.1<sub>hrs</sub></div>
+    <div class="kpi-label">Clinician time reclaimed per shift with AI scribe</div>
+    <div class="kpi-source">12-week clinical pilot</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/><circle cx="8" cy="16" r="2"/><circle cx="14" cy="10" r="2"/><circle cx="19" cy="7" r="2"/></svg></div>
+    <div class="kpi-value">98.6<sub>%</sub></div>
+    <div class="kpi-label">Agreement with radiologists on triage routing</div>
+    <div class="kpi-source">Independent external review</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg></div>
+    <div class="kpi-value">$41<sub>M</sub></div>
+    <div class="kpi-label">Annualized savings across revenue cycle & UM</div>
+    <div class="kpi-source">Top-10 regional health system</div>
+  </div>
+</div>
+
+<!-- Featured agents -->
+<div id="agents">
+<div class="section-title-row">
+  <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 14c0 4-3.5 6-7 6s-7-2-7-6V6c0-1 1-2 2-2h3"/><path d="M14 4h3c1 0 2 1 2 2v8"/><circle cx="19" cy="18" r="2"/><path d="M12 4v6M9 7h6"/></svg> Featured Agents — <em>Clinical Stack</em></h2>
+  <a href="#gallery" class="btn btn-ghost btn-sm">View all use cases →</a>
+</div>
+<p class="section-desc">Each agent ships with guardrails, evidence citations, and an audit trail — wired into Epic, Cerner, Athena, and most HL7/FHIR sources.</p>
+<div class="agents-grid">
+
+  <article class="agent-card">
+    <div class="agent-thumb t1">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 14c0 4-3.5 6-7 6s-7-2-7-6V6c0-1 1-2 2-2h3"/><path d="M14 4h3c1 0 2 1 2 2v8"/><circle cx="19" cy="18" r="2"/><path d="M12 4v6M9 7h6"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v3.2</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Clinical Notes Copilot</div>
+      <div class="agent-meta">Industry: <b>Healthcare · Primary Care, IM</b></div>
+      <p class="agent-desc">Ambient scribe that turns visit audio into structured SOAP notes, problem lists, and after-visit summaries with verbatim source citations.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t2">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v2.0</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Prior Authorization Agent</div>
+      <div class="agent-meta">Industry: <b>Payer · Provider</b></div>
+      <p class="agent-desc">Drafts, submits, and tracks prior-auth requests across payer portals with policy-grounded reasoning and live status updates in the EHR.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t3">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v1.4</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Radiology Triage Router</div>
+      <div class="agent-meta">Industry: <b>Healthcare · Radiology, ED</b></div>
+      <p class="agent-desc">Prioritizes imaging worklists by acuity — flags suspected PE, ICH, and stroke for immediate radiologist review with automated worklist handoff.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t4">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M21 15a4 4 0 01-4 4H7l-4 4V5a4 4 0 014-4h10a4 4 0 014 4z"/><circle cx="9" cy="10" r="1"/><circle cx="13" cy="10" r="1"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v4.1</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Patient Intake Chatbot</div>
+      <div class="agent-meta">Industry: <b>Healthcare · 38 languages</b></div>
+      <p class="agent-desc">Conversational intake and triage — collects history, screens for red flags, and routes to the right care setting before the visit.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t5">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/><circle cx="8" cy="16" r="2"/><circle cx="14" cy="10" r="2"/><circle cx="19" cy="7" r="2"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v1.1</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Revenue Cycle Auditor</div>
+      <div class="agent-meta">Industry: <b>Healthcare · RCM</b></div>
+      <p class="agent-desc">Finds coding gaps, denial risks, and missed HCCs before claims go out the door — paired with automated appeal-letter drafting.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t6">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M10 3L3 10l6 6 7-7z"/><path d="M16 6l5 5-7 7-3-3"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v2.3</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Clinical Trial Matcher</div>
+      <div class="agent-meta">Industry: <b>Life Sciences · Providers</b></div>
+      <p class="agent-desc">Matches patient charts against ClinicalTrials.gov eligibility criteria with explainable inclusion/exclusion reasoning and sponsor protocol integration.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+</div>
+</div>
+
+<!-- Gallery -->
+<div class="gallery-wrap" id="gallery">
+  <div class="gallery-header">
+    <div class="section-title-row" style="margin-bottom:14px;">
+      <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg> Full Use-Case Gallery</h2>
+    </div>
+    <p class="section-desc" style="margin-bottom:14px;">47 healthcare AI use cases, ready to deploy. Filter by care setting, department, data source, or outcome goal.</p>
+  </div>
+  <div class="gallery-controls">
+    <div class="gallery-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input id="searchInput" placeholder="Search healthcare use cases…">
+      <span class="count-badge" id="count">0</span>
+    </div>
+    <div class="chip-row" id="categoryChips"></div>
+  </div>
+  <div class="gallery-body">
+    <div class="filter-panel" id="filterSidebar"></div>
+    <div class="gallery-grid-wrap">
+      <div class="gallery-grid" id="galleryGrid"></div>
+    </div>
+  </div>
+</div>
+
+<!-- Compliance -->
+<div class="compliance-section" id="compliance">
+  <div class="section-title-row">
+    <h2 style="color:white;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg> Trust &amp; Compliance</h2>
+  </div>
+  <p class="compliance-desc">Built for the regulated edge of healthcare. Every agent runs inside your VPC or tenant — PHI never leaves your cloud boundary.</p>
+  <div class="badge-row">
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+    <div class="badge-name">HIPAA</div>
+    <div class="badge-desc">Privacy & Security Rule · BAA available</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/></svg></div>
+    <div class="badge-name">HITRUST r2</div>
+    <div class="badge-desc">Certified for high-risk environments</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <div class="badge-name">SOC 2 Type II</div>
+    <div class="badge-desc">Continuous audit across 5 trust criteria</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 3l9 4v6c0 5-4 9-9 11-5-2-9-6-9-11V7z"/></svg></div>
+    <div class="badge-name">GDPR & PIPEDA</div>
+    <div class="badge-desc">Data-residency controls per region</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6-9 6z"/><path d="M3 9v6l9 6 9-6V9"/></svg></div>
+    <div class="badge-name">FHIR R4 / HL7 v2</div>
+    <div class="badge-desc">Native connectors · SMART-on-FHIR</div>
+  </div></div>
+  <div class="promise-row">
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+    <h4>PHI stays in your tenant</h4>
+    <p>Deploy into your existing Azure / AWS / GCP environment. No data leaves your perimeter — not for training, not for inference.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5-4 9-9 11-5-2-9-6-9-11V6z"/><path d="M12 22V2"/></svg></div>
+    <h4>Evidence-grade citations</h4>
+    <p>Every agent response is grounded in chart sources with clickable citations for clinician review and audit.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/><path d="M9 14l2 2 4-4"/></svg></div>
+    <h4>Immutable audit trails</h4>
+    <p>Every prompt, every retrieval, every action — logged with user, tenant, and model version. Export to your SIEM.</p>
+  </div></div>
+</div>
+
+<!-- How it works -->
+<div class="steps-section" id="how-it-works">
+  <div class="section-title-row">
+    <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> From Kickoff to Production in <em>Under 8 Weeks</em></h2>
+  </div>
+  <div class="steps-row">
+  <div class="step-item">
+    <div class="step-num">01</div>
+    <h4>Discover</h4>
+    <p>Workshop your top 3–5 use cases. Prioritize by ROI, clinical risk, and data readiness.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">02</div>
+    <h4>Build</h4>
+    <p>Configure agents on your data. Connect to Epic, Cerner, claims, and imaging via pre-built connectors.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">03</div>
+    <h4>Validate</h4>
+    <p>Clinical SME review. Bias & safety eval. Red-team against PHI-handling edge cases before go-live.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">04</div>
+    <h4>Scale</h4>
+    <p>Rollout across facilities with guardrail monitoring, drift detection, and continuous improvement.</p>
+  </div></div>
+</div>
+
+<!-- Case study -->
+<div class="case-section" id="case-study">
+  <div class="section-title-row">
+    <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Customer Story</h2>
+  </div>
+  <div class="case-card-inner">
+    <div class="case-visual">
+      <div class="case-logo-tag">◆ MeridianHealth</div>
+      <div class="case-metrics">
+        <div class="case-metric"><div class="v">68%</div><div class="l">Note-writing time ↓</div></div>
+        <div class="case-metric"><div class="v">$14.2M</div><div class="l">Annualized</div></div>
+        <div class="case-metric"><div class="v">6 wks</div><div class="l">Go-live</div></div>
+      </div>
+    </div>
+    <div class="case-body">
+      <p class="case-quote">The Clinical Notes Copilot is the first AI tool my physicians actually asked us to scale. We went from pilot to 14 facilities in a single quarter — with every note audited and every citation traceable.</p>
+      <div class="case-attrib"><div class="case-ph">RK</div><div class="case-who"><b>Dr. Raj Kapoor</b><span>Chief Medical Information Officer · MeridianHealth</span></div></div>
+      <a href="#" class="case-link">Read the full case study <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="faq-section" id="faq">
+  <div class="section-title-row">
+    <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg> Frequently Asked</h2>
+  </div>
+  <div class="faq-list">
+  <details class="faq-item"open>
+    <summary class="faq-q">Is PHI ever used to train shared models?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">No. AI Factory deploys inside your tenant and uses retrieval — not fine-tuning on your PHI. All prompts, retrievals, and responses stay within your cloud boundary.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">Which EHRs and data sources are supported?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Native connectors for Epic, Cerner, Athena, and MEDITECH via FHIR R4 and HL7 v2. Claims (837/835), DICOM, lab (LOINC), and pharmacy (NCPDP) supported out of the box.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">How is clinical accuracy evaluated?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Every agent ships with board-certified specialist review, adversarial red-team prompts, bias audits across demographics, and continuous drift monitoring in production.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">What does a typical deployment timeline look like?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Discovery (1 wk), pilot config (2–3 wks), clinical validation (2 wks), limited production (2 wks), scaled rollout. Most customers reach first production agent in 6–8 weeks.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">Do you sign a Business Associate Agreement?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Yes. A BAA is executed before any PHI touches the platform. AI Factory is HIPAA, HITRUST r2, and SOC 2 Type II attested.</div>
+  </details></div>
+</div>
+
+<!-- CTA -->
+<div class="cta-section" id="cta">
+  <div>
+    <div class="cta-eyebrow"><span class="dot"></span>Book a Demo</div>
+    <h2 class="cta-h2">See AI Factory on <em>your</em> data.</h2>
+    <p class="cta-p">A 30-minute working session with our healthcare AI deployment team. We'll pick one of your use cases and show you what a production agent looks like.</p>
+    <div class="cta-checks">
+      <div class="cta-check">No data required for the demo</div>
+      <div class="cta-check">BAA available on request</div>
+      <div class="cta-check">MSA-friendly commercial terms</div>
+    </div>
+  </div>
+  <form class="cta-form-wrap cta-form">
+    <div class="cta-row">
+      <div class="cta-field"><label>First name</label><input type="text" placeholder="Jordan"></div>
+      <div class="cta-field"><label>Last name</label><input type="text" placeholder="Reyes"></div>
+    </div>
+    <div class="cta-field"><label>Work email</label><input type="email" placeholder="you@healthsystem.org"></div>
+    <div class="cta-row">
+      <div class="cta-field"><label>Organization</label><input type="text" placeholder="Health System"></div>
+      <div class="cta-field"><label>Role</label><select><option>CMIO / CMO</option><option>CIO / CTO</option><option>VP Clinical Ops</option><option>Revenue Cycle Leader</option></select></div>
+    </div>
+    <button type="submit" class="cta-submit">Book my 30-min session →</button>
+  </form>
+</div>
+</div><!-- /page-content -->
+</div><!-- /portal-main -->
+</div><!-- /portal-wrap -->
+
+<script src="js/core.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/portal.js"></script>
+<script>
+/* Mobile menu button visibility */
+document.getElementById('mobileMenuBtn').style.display = 'flex';
+
+const USE_CASES = [
+  {id:1,title:"Ambient Clinical Scribe",cat:"clinical",setting:["outpatient","ambulatory"],dept:["primary"],src:["notes"],goal:["clinician"],desc:"Ambient audio → structured SOAP note, problem list, and after-visit summary with verbatim citations.",status:"consumed",ver:"3.2",tone:"t1"},
+  {id:2,title:"Prior Authorization Agent",cat:"admin",setting:["ambulatory","outpatient"],dept:["rcm"],src:["claims","notes"],goal:["revenue","clinician"],desc:"Drafts, submits, and tracks prior-auth requests across payer portals with policy-grounded reasoning.",status:"new",ver:"2.0",tone:"t2"},
+  {id:3,title:"Radiology Triage Router",cat:"clinical",setting:["ed","inpatient"],dept:["radiology"],src:["imaging","notes"],goal:["quality"],desc:"Prioritizes imaging worklists by acuity — flags PE, ICH, stroke for immediate radiologist review.",status:"trending",ver:"1.4",tone:"t3"},
+  {id:4,title:"Patient Intake Chatbot",cat:"patient",setting:["telehealth","ambulatory"],dept:["primary"],src:["notes"],goal:["access","clinician"],desc:"Conversational intake, history collection, red-flag screening — routes to the right care setting.",status:"consumed",ver:"4.1",tone:"t4"},
+  {id:5,title:"Revenue Cycle Auditor",cat:"payer",setting:["inpatient","outpatient"],dept:["rcm"],src:["claims","notes"],goal:["revenue"],desc:"Finds coding gaps, denial risks, and missed HCCs before claims go out. Drafts appeal letters.",status:"new",ver:"1.1",tone:"t5"},
+  {id:6,title:"Clinical Trial Matcher",cat:"clinical",setting:["ambulatory","outpatient"],dept:["oncology"],src:["notes","labs"],goal:["quality","access"],desc:"Matches patient charts against ClinicalTrials.gov protocols with explainable reasoning.",status:"trending",ver:"2.3",tone:"t6"},
+  {id:7,title:"Discharge Summary Generator",cat:"clinical",setting:["inpatient"],dept:["primary"],src:["notes"],goal:["clinician"],desc:"Assembles discharge summary, medication reconciliation, and follow-up plan from the admission.",status:"consumed",ver:"2.5",tone:"t1"},
+  {id:8,title:"Sepsis Early-Warning Agent",cat:"clinical",setting:["inpatient","ed"],dept:["primary"],src:["labs","notes"],goal:["quality"],desc:"Monitors vitals, labs, and notes in real time — alerts for suspected sepsis within 2 hours.",status:"trending",ver:"1.8",tone:"t2"},
+  {id:9,title:"Denials & Appeals Copilot",cat:"payer",setting:["outpatient"],dept:["rcm"],src:["claims"],goal:["revenue"],desc:"Classifies denial reasons and drafts payer-specific appeal letters with cited clinical evidence.",status:"new",ver:"1.3",tone:"t3"},
+  {id:10,title:"Medication Reconciliation",cat:"clinical",setting:["inpatient","ambulatory"],dept:["primary"],src:["notes"],goal:["quality"],desc:"Reconciles med lists across discharge, PCP, and pharmacy — surfaces interactions and duplications.",status:"consumed",ver:"2.2",tone:"t4"},
+  {id:11,title:"Appointment Scheduling Agent",cat:"patient",setting:["ambulatory","telehealth"],dept:["primary"],src:[],goal:["access"],desc:"Conversational scheduling and reminders — integrates with Epic Cadence and athenaClinicals.",status:"consumed",ver:"3.0",tone:"t5"},
+  {id:12,title:"HCC Gap Finder",cat:"payer",setting:["outpatient"],dept:["rcm"],src:["claims","notes"],goal:["revenue"],desc:"Identifies missed HCC codes to support accurate risk-adjusted reimbursement.",status:"trending",ver:"1.5",tone:"t6"},
+  {id:13,title:"Referral Management Agent",cat:"admin",setting:["ambulatory"],dept:["primary"],src:["notes"],goal:["clinician","access"],desc:"Routes referrals to the right specialist, tracks acceptance, and drafts the consult packet.",status:"consumed",ver:"2.1",tone:"t1"},
+  {id:14,title:"Post-Op Patient Monitor",cat:"patient",setting:["telehealth"],dept:["primary"],src:["notes"],goal:["quality","access"],desc:"Checks in with post-surgical patients via SMS / voice — escalates symptoms to the care team.",status:"new",ver:"1.0",tone:"t2"},
+  {id:15,title:"Oncology Pathway Advisor",cat:"clinical",setting:["outpatient"],dept:["oncology"],src:["notes","labs"],goal:["quality"],desc:"Surfaces NCCN-aligned pathway recommendations with citations at point of care.",status:"trending",ver:"1.7",tone:"t3"},
+  {id:16,title:"Claims Coding Assistant",cat:"payer",setting:["outpatient"],dept:["rcm"],src:["claims","notes"],goal:["revenue"],desc:"Suggests ICD-10, CPT, and HCPCS codes from the note with rationale and rule checks.",status:"consumed",ver:"2.8",tone:"t4"},
+  {id:17,title:"Cardiology Arrhythmia Reviewer",cat:"clinical",setting:["inpatient","outpatient"],dept:["cardiology"],src:["labs","notes"],goal:["quality","clinician"],desc:"Reviews ECG / telemetry strips and prioritizes rhythms for cardiologist sign-off.",status:"new",ver:"1.2",tone:"t5"},
+  {id:18,title:"Care Gap Outreach Agent",cat:"patient",setting:["ambulatory","telehealth"],dept:["primary"],src:["claims","labs"],goal:["quality","access"],desc:"Proactively reaches out to patients overdue for screenings (mammogram, A1c, colonoscopy).",status:"consumed",ver:"2.4",tone:"t6"},
+  {id:19,title:"ICU Early-Warning System",cat:"clinical",setting:["inpatient"],dept:["primary"],src:["labs","notes"],goal:["quality"],desc:"Predicts ICU deterioration 6 hours ahead using continuous vitals streams and lab trends.",status:"trending",ver:"1.6",tone:"t1"},
+  {id:20,title:"Pharmacy Benefits Checker",cat:"payer",setting:["outpatient"],dept:["rcm"],src:["claims"],goal:["revenue","clinician"],desc:"Verifies formulary coverage, step-therapy, and quantity limits at point of prescribing.",status:"consumed",ver:"2.7",tone:"t2"},
+  {id:21,title:"CDI Query Agent",cat:"admin",setting:["inpatient"],dept:["rcm"],src:["notes","claims"],goal:["revenue"],desc:"Real-time clinical documentation integrity queries — integrates with 3M and Nuance CDI platforms.",status:"new",ver:"1.0",tone:"t3"},
+  {id:22,title:"Patient Education Generator",cat:"patient",setting:["ambulatory","telehealth"],dept:["primary"],src:["notes"],goal:["access"],desc:"Creates personalized, literacy-appropriate after-visit instructions and education materials.",status:"consumed",ver:"1.9",tone:"t4"},
+];
+const categories = [
+  {id:"clinical",label:"Clinical",count:9},
+  {id:"admin",label:"Administrative",count:3},
+  {id:"payer",label:"Payer & RCM",count:6},
+  {id:"patient",label:"Patient-facing",count:5},
+];
+const filters = {
+  setting:{label:"Care setting",items:[{value:"inpatient",label:"Inpatient",count:9},{value:"outpatient",label:"Outpatient",count:13},{value:"ed",label:"Emergency Dept.",count:3},{value:"ambulatory",label:"Ambulatory",count:11},{value:"telehealth",label:"Telehealth",count:6}]},
+  dept:{label:"Department",items:[{value:"primary",label:"Primary care",count:10},{value:"radiology",label:"Radiology",count:2},{value:"oncology",label:"Oncology",count:3},{value:"cardiology",label:"Cardiology",count:1},{value:"rcm",label:"Revenue cycle",count:8}]},
+  src:{label:"Data source",items:[{value:"notes",label:"Clinical notes",count:15},{value:"claims",label:"Claims (837/835)",count:9},{value:"labs",label:"Lab (LOINC/HL7)",count:7},{value:"imaging",label:"DICOM imaging",count:2}]},
+  goal:{label:"Priority outcome",items:[{value:"clinician",label:"Reduce clinician burden",count:10},{value:"revenue",label:"Recover revenue",count:9},{value:"quality",label:"Improve quality & safety",count:10},{value:"access",label:"Expand access",count:8}]},
+};
+initGallery(USE_CASES, "Healthcare", categories, filters);
+</script>
+</body>
+</html>

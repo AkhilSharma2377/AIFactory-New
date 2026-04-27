@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light" class="ind-manufacturing">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Factory · Manufacturing</title>
+<link rel="stylesheet" href="css/portal.css">
+</head>
+<body class="ind-manufacturing">
+<div class="portal-wrap">
+
+
+  <div class="sb-overlay" id="sbOverlay"></div>
+  <aside class="sidebar" id="sidebar">
+    <div class="sb-brand">
+      <div class="sb-logo-mark">AI</div>
+      <div class="sb-brand-text">
+        <strong>AI Factory™</strong>
+        <span>Enterprise Platform</span>
+      </div>
+    </div>
+    <div class="sb-industry">
+      <div class="sb-industry-icon">🏭</div>
+      <div class="sb-industry-text">
+        <strong>Manufacturing</strong>
+        <span>Industry Dashboard</span>
+      </div>
+    </div>
+    <nav class="sb-nav">
+      <div class="sb-section-label">Overview</div>
+    <a class="sb-item active" href="manufacturing.html" data-page="manufacturing.html" data-label="Manufacturing Dashboard">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span>
+      <span class="sb-label">Manufacturing Dashboard</span>
+    </a><div class="sb-section-label">Content</div>
+    <a class="sb-item" href="#agents" data-label="Featured Agents">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+      <span class="sb-label">Featured Agents</span>
+    </a>
+    <a class="sb-item" href="#gallery" data-label="Use Cases">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg></span>
+      <span class="sb-label">Use Cases</span>
+    </a><div class="sb-section-label">Trust</div>
+    <a class="sb-item" href="#compliance" data-label="Compliance">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></span>
+      <span class="sb-label">Compliance</span>
+    </a>
+    <a class="sb-item" href="#how-it-works" data-label="How It Works">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+      <span class="sb-label">How It Works</span>
+    </a>
+    <a class="sb-item" href="#case-study" data-label="Case Study">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg></span>
+      <span class="sb-label">Case Study</span>
+    </a><div class="sb-section-label">Support</div>
+    <a class="sb-item" href="#faq" data-label="FAQ">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg></span>
+      <span class="sb-label">FAQ</span>
+    </a>
+    <a class="sb-item" href="#cta" data-label="Book Demo">
+      <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg></span>
+      <span class="sb-label">Book Demo</span>
+    </a>
+      <div class="sb-divider"></div>
+      <div class="sb-section-label">Industries</div>
+      
+    <a class="sb-item" href="healthcare.html" data-label="Healthcare" data-page="healthcare.html">
+      <span class="sb-icon" style="font-size:15px;">🏥</span>
+      <span class="sb-label">Healthcare</span>
+    </a>
+    <a class="sb-item" href="financial.html" data-label="Financial" data-page="financial.html">
+      <span class="sb-icon" style="font-size:15px;">💳</span>
+      <span class="sb-label">Financial</span>
+    </a>
+    <a class="sb-item active" href="manufacturing.html" data-label="Manufacturing" data-page="manufacturing.html">
+      <span class="sb-icon" style="font-size:15px;">🏭</span>
+      <span class="sb-label">Manufacturing</span>
+    </a>
+    <a class="sb-item" href="retail.html" data-label="Retail" data-page="retail.html">
+      <span class="sb-icon" style="font-size:15px;">🛍️</span>
+      <span class="sb-label">Retail</span>
+    </a>
+    <a class="sb-item" href="insurance.html" data-label="Insurance" data-page="insurance.html">
+      <span class="sb-icon" style="font-size:15px;">🛡️</span>
+      <span class="sb-label">Insurance</span>
+    </a>
+      <div class="sb-divider"></div>
+      <a class="sb-item" href="landing-page.html" data-label="All Industries">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6v11a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+        <span class="sb-label">All Industries</span>
+      </a>
+      <a class="sb-item js-logout" href="#" data-label="Sign Out">
+        <span class="sb-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"/></svg></span>
+        <span class="sb-label">Sign Out</span>
+      </a>
+    </nav>
+    <div class="sb-footer">
+      <div class="sb-user">
+        <div class="sb-avatar js-user-initials">AM</div>
+        <div class="sb-user-info">
+          <div class="sb-user-name js-user-name">Alex Morgan</div>
+          <div class="sb-user-role">Platform Admin</div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+<div class="portal-main" id="portalMain">
+
+  <header class="topbar" id="topbar">
+    <button class="tb-collapse-btn" id="collapseBtn" title="Toggle sidebar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <button class="tb-collapse-btn" id="mobileMenuBtn" style="display:none;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 12h18M3 6h18M3 18h18"></svg></button>
+    <div class="tb-breadcrumb">
+      <a href="landing-page.html">AI Factory</a>
+      <span class="sep">/</span>
+      <span class="current">Manufacturing</span>
+    </div>
+    <div class="tb-spacer"></div>
+    <div class="tb-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input placeholder="Search manufacturing use cases…">
+    </div>
+    <div class="tb-actions">
+      <button class="tb-icon-btn" title="Notifications">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M18 8A6 6 0 006 8c0 7-3 9-3 9h18s-3-2-3-9M13.73 21a2 2 0 01-3.46 0"/></svg>
+        <span class="tb-badge"></span>
+      </button>
+      <button class="tb-icon-btn" title="Help">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg>
+      </button>
+      <button class="theme-toggle-btn" title="Toggle dark/light mode">🌙</button>
+      <div class="tb-user-chip">
+        <div class="tb-chip-avatar js-user-initials">AM</div>
+        <span class="tb-chip-name js-user-name">Alex Morgan</span>
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><polyline points="6 9 12 15 18 9"/></svg>
+      </div>
+    </div>
+  </header>
+
+<div class="page-content">
+
+<div class="page-header">
+  <div class="page-header-left">
+    <div class="page-eyebrow"><span class="dot"></span>AI Factory · Manufacturing</div>
+    <h1 class="page-title">Manufacturing AI Platform</h1>
+    <p class="page-subtitle">Deploy predictive maintenance, quality inspection, and supply chain AI on your OT/IT infrastructure …</p>
+  </div>
+  <div class="page-actions">
+    <a href="landing-page.html" class="btn btn-ghost"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 12H5M12 5l-7 7 7 7"/></svg> All Industries</a>
+    <a href="#cta" class="btn btn-primary"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M15 10l4.553-2.277A1 1 0 0121 8.624v6.752a1 1 0 01-1.447.9L15 14M3 8a2 2 0 012-2h10a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V8z"/></svg> Book Demo</a>
+  </div>
+</div>
+
+<div class="industry-hero">
+  <div class="hero-left">
+    <div class="hero-eyebrow"><span class="dot"></span>AI Factory · Manufacturing</div>
+    <h1 class="hero-h1">AI agents purpose-built for <em>factory floor &amp; supply chain</em> intelligence.</h1>
+    <p class="hero-sub">Deploy predictive maintenance, quality inspection, and supply chain AI on your OT/IT infrastructure — with explainable alerts, minimal downtime, and measurable OEE improvement from day one.</p>
+    <div class="hero-cta-row">
+      <a href="#cta" class="btn btn-primary btn-sm">Book a 30-min demo →</a>
+      <a href="#gallery" class="btn btn-ghost btn-sm">Explore use cases</a>
+    </div>
+    <div class="hero-trust">
+      <div class="hero-trust-item"><b>140+</b> production deployments</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item">ISO 9001 · IEC 62443 · ISO 45001</div>
+      <div class="hero-trust-sep"></div>
+      <div class="hero-trust-item">Azure · AWS · <b>GCP</b></div>
+    </div>
+  </div>
+  <div class="chat-widget">
+    <div class="chat-head">
+      <div class="chat-head-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg></div>
+      <div><div class="chat-head-name">Predictive Maintenance Agent</div><div class="chat-head-role">v2.4</div></div>
+      <div class="chat-live">Live</div>
+    </div>
+    <div class="chat-msgs">
+      <div class="chat-msg u">Forecasts equipment failures 24–72 hours ahead using vibrati…</div>
+      <div class="chat-msg b"><b>Analysis complete.</b> on, temperature, and current draw — auto-generates maintenance work or…<br><span class="chat-pill">✓ Manufacturing AI Engine</span></div>
+    </div>
+    <div class="chat-float-row">
+      <div class="chat-float">
+        <div class="chat-float-label">Reduction in unplanned d</div>
+        <div class="chat-float-val">41</div>
+        <div class="chat-float-delta">8 discrete mfg deployments</div>
+        <div class="chat-mini-bars"><span style="height:55%"></span><span style="height:70%"></span><span style="height:45%"></span><span style="height:35%"></span><span style="height:22%"></span><span style="height:16%"></span><span style="height:100%"></span></div>
+      </div>
+      <div class="chat-float">
+        <div class="chat-float-label">Quality defect detection</div>
+        <div class="chat-float-val">99.2</div>
+        <div class="chat-float-delta">Automotive Tier-1 supplier</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="trust-row">
+  <span class="trust-label">Trusted by</span>
+  <div class="trust-logos"><span class="trust-logo">◆ Apex Industries</span><div class="trust-sep"></div><span class="trust-logo">◈ Voltan Auto</span><div class="trust-sep"></div><span class="trust-logo">■ PrecisionTech</span><div class="trust-sep"></div><span class="trust-logo">● NovaCast</span><div class="trust-sep"></div><span class="trust-logo">∿ SteelCore</span></div>
+</div>
+
+<div class="kpi-grid">
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/></svg></div>
+    <div class="kpi-value">41<sub>%</sub></div>
+    <div class="kpi-label">Reduction in unplanned downtime across production lines</div>
+    <div class="kpi-source">8 discrete mfg deployments</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/></svg></div>
+    <div class="kpi-value">99.2<sub>%</sub></div>
+    <div class="kpi-label">Quality defect detection rate before shipment</div>
+    <div class="kpi-source">Automotive Tier-1 supplier</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <div class="kpi-value">$2.8<sub>M</sub></div>
+    <div class="kpi-label">Average annual savings per facility from predictive maintenance</div>
+    <div class="kpi-source">12-month production data</div>
+  </div>
+  <div class="kpi-card">
+    <div class="kpi-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l10 6.5v7L12 22 2 15.5v-7L12 2z"/></svg></div>
+    <div class="kpi-value">18<sub>%</sub></div>
+    <div class="kpi-label">Energy consumption reduction through AI-optimized scheduling</div>
+    <div class="kpi-source">3 process manufacturing sites</div>
+  </div></div>
+
+<div id="agents">
+<div class="section-title-row">
+  <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg> Featured Agents</h2>
+  <a href="#gallery" class="btn btn-ghost btn-sm">View all →</a>
+</div>
+<p class="section-desc">Each agent integrates with your MES, ERP, and historian systems without replacing existing infrastructure.</p>
+<div class="agents-grid">
+  <article class="agent-card">
+    <div class="agent-thumb t1">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M19 14c0 4-3.5 6-7 6s-7-2-7-6V6c0-1 1-2 2-2h3"/><path d="M14 4h3c1 0 2 1 2 2v8"/><circle cx="19" cy="18" r="2"/><path d="M12 4v6M9 7h6"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v2.4</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Predictive Maintenance Agent</div>
+      <div class="agent-meta">Industry: <b>Discrete Mfg · Asset-Intensive</b></div>
+      <p class="agent-desc">Forecasts equipment failures 24–72 hours ahead using vibration, temperature, and current draw — auto-generates maintenance work orders in your CMMS.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t2">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12h2v5H9zM13 8h2v9h-2zM17 14h2v3h-2z"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v1.9</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Visual Quality Inspector</div>
+      <div class="agent-meta">Industry: <b>Quality · Production Line</b></div>
+      <p class="agent-desc">Computer vision detecting surface defects, dimensional deviations, and assembly errors at line speed with <0.1% false reject rate.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t3">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v1.3</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Supply Chain Risk Agent</div>
+      <div class="agent-meta">Industry: <b>Procurement · Logistics</b></div>
+      <p class="agent-desc">Monitors supplier health, lead times, and geopolitical risk signals — recommends alternate sourcing before disruptions hit production.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t4">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M21 15a4 4 0 01-4 4H7l-4 4V5a4 4 0 014-4h10a4 4 0 014 4z"/><circle cx="9" cy="10" r="1"/><circle cx="13" cy="10" r="1"/></svg>
+      <div class="agent-ribbon ">CONSUMED POC</div>
+      <div class="agent-thumb-version">v2.1</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Production Scheduler AI</div>
+      <div class="agent-meta">Industry: <b>Operations · MES</b></div>
+      <p class="agent-desc">Dynamic scheduling optimizing throughput, changeover time, and on-time delivery — integrates with SAP PP, Oracle Manufacturing, and Epicor.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t5">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/><circle cx="8" cy="16" r="2"/><circle cx="14" cy="10" r="2"/><circle cx="19" cy="7" r="2"/></svg>
+      <div class="agent-ribbon is-new">NEW</div>
+      <div class="agent-thumb-version">v1.1</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Energy Optimization Agent</div>
+      <div class="agent-meta">Industry: <b>Sustainability · Facilities</b></div>
+      <p class="agent-desc">Reduces energy consumption by 12–22% through AI-driven load balancing, demand forecasting, and peak shaving strategies.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article>
+  <article class="agent-card">
+    <div class="agent-thumb t6">
+      <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M10 3L3 10l6 6 7-7z"/><path d="M16 6l5 5-7 7-3-3"/></svg>
+      <div class="agent-ribbon ">TRENDING</div>
+      <div class="agent-thumb-version">v1.6</div>
+    </div>
+    <div class="agent-body">
+      <div class="agent-title">Safety Incident Analyzer</div>
+      <div class="agent-meta">Industry: <b>EHS · Operations</b></div>
+      <p class="agent-desc">Analyzes near-miss reports, maintenance logs, and sensor data to surface leading safety indicators before incidents occur.</p>
+      <div class="agent-footer">
+        <a href="#" class="agent-cs-btn"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Case Study</a>
+        <button class="agent-action-btn" title="Demo"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M8 5v14l11-7z"/></svg></button>
+        <button class="agent-action-btn" title="Schedule POC"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></button>
+      </div>
+    </div>
+  </article></div>
+</div>
+
+<div class="gallery-wrap" id="gallery">
+  <div class="gallery-header">
+    <div class="section-title-row" style="margin-bottom:14px;">
+      <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M4 6h16M4 12h16M4 18h10"/></svg> Full Use-Case Gallery</h2>
+    </div>
+    <p class="section-desc" style="margin-bottom:14px;">Filter by production area, asset type, data source, or business outcome. All assets include a working POC and ROI model.</p>
+  </div>
+  <div class="gallery-controls">
+    <div class="gallery-search">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="11" cy="11" r="7"/><path d="M21 21l-4-4"/></svg>
+      <input id="searchInput" placeholder="Search manufacturing use cases…">
+      <span class="count-badge" id="count">0</span>
+    </div>
+    <div class="chip-row" id="categoryChips"></div>
+  </div>
+  <div class="gallery-body">
+    <div class="filter-panel" id="filterSidebar"></div>
+    <div class="gallery-grid-wrap"><div class="gallery-grid" id="galleryGrid"></div></div>
+  </div>
+</div>
+
+<div class="compliance-section" id="compliance">
+  <div class="section-title-row">
+    <h2 style="color:white;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg> Trust &amp; Security</h2>
+  </div>
+  <p class="compliance-desc">Every agent integrates with your OT network via secure DMZ. No sensor data or process IP leaves your facility perimeter.</p>
+  <div class="badge-row">
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="4" y="4" width="16" height="16" rx="3"/><path d="M8 12l3 3 5-6"/></svg></div>
+    <div class="badge-name">ISO 9001</div>
+    <div class="badge-desc">Quality management system certified</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2l9 4v6c0 5.5-3.8 10.7-9 12C6.8 22.7 3 17.5 3 12V6z"/><path d="M9 12l2 2 4-4"/></svg></div>
+    <div class="badge-name">IEC 62443</div>
+    <div class="badge-desc">Industrial cybersecurity standard</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+    <div class="badge-name">ISO 45001</div>
+    <div class="badge-desc">Occupational health & safety management</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 3l9 4v6c0 5-4 9-9 11-5-2-9-6-9-11V7z"/></svg></div>
+    <div class="badge-name">GDPR</div>
+    <div class="badge-desc">Data processing agreements available</div>
+  </div>
+  <div class="badge-card">
+    <div class="badge-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 9l9-6 9 6-9 6z"/><path d="M3 9v6l9 6 9-6V9"/></svg></div>
+    <div class="badge-name">ISA-95</div>
+    <div class="badge-desc">OT/IT integration standard aligned</div>
+  </div></div>
+  <div class="promise-row">
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div>
+    <h4>OT-safe architecture</h4>
+    <p>Agents deploy in your IT DMZ with one-way data flows from the OT network — no inbound connections to PLCs or SCADA systems.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M3 3v18h18"/><path d="M7 14l4-4 4 4 4-8"/></svg></div>
+    <h4>Explainable alerts every time</h4>
+    <p>Every maintenance alert and quality flag includes the specific sensor readings, thresholds breached, and recommended actions — no black boxes on the factory floor.</p>
+  </div>
+  <div class="promise-card">
+    <div class="promise-ico"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+    <h4>IP stays on-premise</h4>
+    <p>Models are trained on your proprietary process data and run inside your network. No production data, recipes, or IP ever leaves your facility.</p>
+  </div></div>
+</div>
+
+<div class="steps-section" id="how-it-works">
+  <div class="section-title-row">
+    <h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> From Kickoff to Production in <em>Under 8 weeks</em></h2>
+  </div>
+  <div class="steps-row">
+  <div class="step-item">
+    <div class="step-num">01</div>
+    <h4>Assess</h4>
+    <p>Audit your highest-value assets and production lines. Map existing sensor infrastructure and identify data gaps.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">02</div>
+    <h4>Connect</h4>
+    <p>Integrate with your MES, ERP, and historian. Deploy edge agents on your existing OT gateway hardware.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">03</div>
+    <h4>Baseline</h4>
+    <p>Run shadow mode for 4 weeks to validate alert accuracy against historical failure data before going live.</p>
+  </div>
+  <div class="step-item">
+    <div class="step-num">04</div>
+    <h4>Operate</h4>
+    <p>Go live with automated work orders, quality holds, and supply chain triggers. Continuous improvement from production feedback.</p>
+  </div></div>
+</div>
+
+<div class="case-section" id="case-study">
+  <div class="section-title-row"><h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><path d="M14 2v6h6"/></svg> Customer Story</h2></div>
+  <div class="case-card-inner">
+    <div class="case-visual">
+      <div class="case-logo-tag">◆ Voltan Auto Parts</div>
+      <div class="case-metrics"><div class="case-metric"><div class="v">41%</div><div class="l">Downtime reduced</div></div><div class="case-metric"><div class="v">$2.8M</div><div class="l">Annual savings</div></div><div class="case-metric"><div class="v">8 wks</div><div class="l">Go-live</div></div></div>
+    </div>
+    <div class="case-body">
+      <p class="case-quote">Before AI Factory, our maintenance team was reactive. Now we get 36-hour advance notice on bearing failures. We have not had a single unplanned line stoppage in 9 months.</p>
+      <div class="case-attrib"><div class="case-ph">MK</div><div class="case-who"><b>Marco Keller</b><span>VP Manufacturing Operations · Voltan Auto</span></div></div>
+      <a href="#" class="case-link">Read the full case study <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><path d="M5 12h14M13 5l7 7-7 7"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<div class="faq-section" id="faq">
+  <div class="section-title-row"><h2><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class=""><circle cx="12" cy="12" r="9"/><path d="M9.1 9a3 3 0 015.8 1c0 2-3 3-3 3M12 17h.01"/></svg> Frequently Asked</h2></div>
+  <div class="faq-list">
+  <details class="faq-item"open>
+    <summary class="faq-q">Does this require replacing our existing SCADA or MES systems?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">No. AI Factory connects to your existing historian (OSIsoft PI, Ignition, Wonderware), MES (SAP ME, Siemens Opcenter), and ERP via secure API or OPC-UA adapters.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">How are models trained without sending our data to the cloud?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Initial model training uses federated learning or on-premise compute. Your production data, process recipes, and quality specs never leave your facility network.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">What sensor types and industrial protocols are supported?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">OPC-UA, MQTT, Modbus, PROFINET, and EtherNet/IP. Standard historian tags from OSIsoft PI, Ignition, and Aveva are supported natively.</div>
+  </details>
+  <details class="faq-item">
+    <summary class="faq-q">Can the quality inspection agent work at full production line speed?<span class="faq-toggle">+</span></summary>
+    <div class="faq-a">Yes. The visual inspection agent runs on edge GPUs at up to 120 parts/minute with sub-20ms inference latency — certified for ISO 9001 quality management integration.</div>
+  </details></div>
+</div>
+
+<div class="cta-section" id="cta">
+  <div>
+    <div class="cta-eyebrow"><span class="dot"></span>Book a Demo</div>
+    <h2 class="cta-h2">See AI Factory on <em>your</em> data.</h2>
+    <p class="cta-p">A 30-minute working session with our manufacturing AI team. We'll pick one of your use cases and show you a production agent live.</p>
+    <div class="cta-checks"><div class="cta-check">No production data needed for demo</div><div class="cta-check">OT-safe architecture included</div><div class="cta-check">ROI model provided</div></div>
+  </div>
+  <form class="cta-form-wrap cta-form">
+    <div class="cta-row">
+      <div class="cta-field"><label>First name</label><input type="text" placeholder="Alex"></div>
+      <div class="cta-field"><label>Last name</label><input type="text" placeholder="Morgan"></div>
+    </div>
+    <div class="cta-field"><label>Work email</label><input type="email" placeholder="you@company.com"></div>
+    <div class="cta-row">
+      <div class="cta-field"><label>Organization</label><input type="text" placeholder="Company Name"></div>
+      <div class="cta-field"><label>Role</label><select><option>VP Manufacturing / Operations</option><option>Plant Manager</option><option>Head of Maintenance</option><option>Chief Digital Officer</option><option>Other</option></select></div>
+    </div>
+    <button type="submit" class="cta-submit">Book my 30-min session →</button>
+  </form>
+</div>
+</div><!-- /page-content -->
+</div><!-- /portal-main -->
+</div><!-- /portal-wrap -->
+
+<script src="js/core.js"></script>
+<script src="js/gallery.js"></script>
+<script src="js/portal.js"></script>
+<script>
+/* Mobile menu button visibility */
+document.getElementById('mobileMenuBtn').style.display = 'flex';
+
+const USE_CASES = [
+  {id:1,title:"Bearing Failure Predictor",cat:"maintenance",area:["machining"],src:["vibration","temp"],goal:["downtime"],desc:"Detects Stage 1–3 bearing wear 24–72 hours before failure using FFT spectral analysis.",status:"consumed",ver:"2.4",tone:"t1"},
+  {id:2,title:"Visual Defect Inspector",cat:"quality",area:["assembly","finishing"],src:["vision","mes"],goal:["quality"],desc:"Deep-learning surface inspection detecting scratches, voids, and dimensional deviations at line speed.",status:"trending",ver:"1.9",tone:"t2"},
+  {id:3,title:"Supplier Risk Radar",cat:"supply",area:["procurement"],src:["erp","external"],goal:["supply"],desc:"Monitors 200+ supplier risk signals with alternate sourcing recommendations.",status:"new",ver:"1.3",tone:"t3"},
+  {id:4,title:"Production Scheduler",cat:"operations",area:["discrete","process"],src:["mes","erp"],goal:["throughput"],desc:"Dynamic finite-capacity scheduling balancing OTD, changeover cost, and machine utilization.",status:"consumed",ver:"2.1",tone:"t4"},
+  {id:5,title:"Energy Load Optimizer",cat:"sustainability",area:["facilities"],src:["scada","utility"],goal:["cost"],desc:"Reduces peak demand charges by shifting flexible loads based on production forecast.",status:"new",ver:"1.1",tone:"t5"},
+  {id:6,title:"Near-Miss Analyzer",cat:"safety",area:["all"],src:["ehs","mes"],goal:["safety"],desc:"Correlates near-miss reports, maintenance records, and sensor anomalies to surface leading EHS indicators.",status:"trending",ver:"1.6",tone:"t6"},
+  {id:7,title:"CNC Tool Wear Agent",cat:"maintenance",area:["machining"],src:["vibration","spindle"],goal:["downtime"],desc:"Monitors spindle load and vibration to predict tool wear and optimize change intervals.",status:"consumed",ver:"1.8",tone:"t1"},
+  {id:8,title:"Weld Quality Monitor",cat:"quality",area:["assembly"],src:["vision","current"],goal:["quality"],desc:"Classifies weld quality in real time using arc signature analysis and post-weld vision inspection.",status:"new",ver:"1.0",tone:"t2"},
+  {id:9,title:"Demand-Driven MRP Agent",cat:"operations",area:["discrete"],src:["erp","demand"],goal:["supply"],desc:"Translates demand signals into material requirements with 94% forecast accuracy.",status:"trending",ver:"1.5",tone:"t3"},
+  {id:10,title:"Yield Loss Root Cause AI",cat:"quality",area:["process","assembly"],src:["mes","lims"],goal:["quality"],desc:"Multi-variate root-cause analysis across process parameters, materials, and equipment.",status:"consumed",ver:"2.2",tone:"t4"},
+  {id:11,title:"Compressor Health Monitor",cat:"maintenance",area:["utilities"],src:["vibration","pressure"],goal:["downtime"],desc:"Continuous monitoring of compressor efficiency, valve health, and seal integrity.",status:"trending",ver:"1.4",tone:"t5"},
+  {id:12,title:"Changeover Optimizer",cat:"operations",area:["discrete","process"],src:["mes"],goal:["throughput"],desc:"Recommends optimal changeover sequences using SMED methodology to minimize setup time.",status:"new",ver:"1.2",tone:"t6"},
+  {id:13,title:"Carbon Footprint Tracker",cat:"sustainability",area:["facilities","process"],src:["scada","utility","erp"],goal:["cost"],desc:"Calculates Scope 1 & 2 emissions per production order — generates GRI and CDP reports.",status:"consumed",ver:"1.6",tone:"t1"},
+];
+const categories = [
+  {id:"maintenance",label:"Predictive Maintenance",count:4},
+  {id:"quality",label:"Quality Inspection",count:4},
+  {id:"supply",label:"Supply Chain",count:2},
+  {id:"operations",label:"Operations",count:3},
+  {id:"sustainability",label:"Sustainability",count:2},
+  {id:"safety",label:"Safety & EHS",count:1},
+];
+const filters = {
+  area:{label:"Production area",items:[{value:"machining",label:"Machining",count:4},{value:"assembly",label:"Assembly",count:5},{value:"process",label:"Process mfg",count:3},{value:"facilities",label:"Facilities",count:3},{value:"procurement",label:"Procurement",count:1}]},
+  src:{label:"Data source",items:[{value:"vibration",label:"Vibration / IoT",count:4},{value:"vision",label:"Machine vision",count:3},{value:"mes",label:"MES / historian",count:7},{value:"erp",label:"ERP (SAP, Oracle)",count:5},{value:"external",label:"External / market",count:2}]},
+  goal:{label:"Business goal",items:[{value:"downtime",label:"Reduce downtime",count:4},{value:"quality",label:"Improve quality",count:5},{value:"throughput",label:"Increase throughput",count:3},{value:"supply",label:"Secure supply chain",count:3},{value:"cost",label:"Cut energy/cost",count:2},{value:"safety",label:"Improve safety",count:1}]},
+};
+initGallery(USE_CASES, "Manufacturing", categories, filters);
+</script>
+</body>
+</html>

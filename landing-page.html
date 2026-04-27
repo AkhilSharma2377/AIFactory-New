@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Factory — Choose Your Industry</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/landing.css" />
+
+  <style>
+    /* Reveal animations for scroll */
+    .reveal {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity .65s ease, transform .65s ease;
+    }
+    .reveal.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    /* Stagger children */
+    .reveal-stagger .reveal-child {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity .5s ease, transform .5s ease;
+    }
+    .reveal-stagger.revealed .reveal-child,
+    .reveal-child.revealed {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ══ TOP NAVBAR ══ -->
+<nav class="landing-nav">
+  <div class="nav-inner">
+    <!-- Logo -->
+    <a href="landing-page.html" class="nav-logo">
+      <div class="nav-logo-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+      AI Factory
+    </a>
+
+    <!-- Links (desktop) -->
+    <ul class="nav-links d-none d-lg-flex">
+      <li><a href="#industries">Industries</a></li>
+      <li><a href="#capabilities">Capabilities</a></li>
+      <li><a href="#ai-journey">AI Journey</a></li>
+    </ul>
+
+    <!-- Right actions -->
+    <div class="nav-right">
+      <button class="theme-toggle" title="Toggle theme">
+        <i class="bi bi-moon-fill"></i>
+      </button>
+      <div class="user-avatar user-initials" title="Your profile">AM</div>
+      <button class="btn-accent logout-btn" style="font-size:.82rem;padding:8px 16px;">
+        <i class="bi bi-box-arrow-right"></i> Logout
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ══ HERO SECTION ══ -->
+<section class="hero-section" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-glow"></div>
+
+  <div class="hero-content">
+    <!-- Left -->
+    <div>
+      <div class="hero-tag anim-fade-up">
+        <span class="dot"></span>
+        Enterprise AI Platform
+      </div>
+      <h1 class="hero-title anim-fade-up delay-1">
+        <span class="highlight">Transform</span> Your<br/>
+        AI Development<br/>
+        Process
+      </h1>
+      <p class="hero-desc anim-fade-up delay-2">
+        AI Factory is a comprehensive platform for managing the complete AI development
+        lifecycle — from ideation to production deployment. Powered by Microsoft Azure.
+      </p>
+      <div class="d-flex gap-3 flex-wrap anim-fade-up delay-3">
+        <a href="#industries" class="btn-accent">
+          <i class="bi bi-grid-3x3-gap-fill"></i> Explore Industries
+        </a>
+        <a href="#ai-journey" class="btn-outline-accent">
+          <i class="bi bi-play-circle"></i> AI Journey
+        </a>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats anim-fade-up delay-4">
+        <div class="stat-item">
+          <div class="stat-num"><span data-count="500" data-suffix="+">500+</span></div>
+          <div class="stat-label">AI Agents Deployed</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span data-count="98.7" data-suffix="%">98.7%</span></div>
+          <div class="stat-label">Platform Uptime</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num"><span data-count="10" data-suffix="x">10x</span></div>
+          <div class="stat-label">Faster Deployment</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Visual -->
+    <div class="hero-visual anim-scale-in delay-2">
+      <div class="floating-badge floating-badge-2">
+        <i class="bi bi-check-circle-fill text-success"></i> 99.9% SLA Guarantee
+      </div>
+      <div class="hero-visual-card">
+        <!-- Mini dashboard preview -->
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:20px;">
+          <div style="width:8px;height:8px;border-radius:50%;background:#22c55e;"></div>
+          <span style="font-size:.75rem;color:var(--text-muted);font-family:var(--font-display);">AI Factory Dashboard</span>
+        </div>
+        <!-- Fake chart bars -->
+        <div style="display:flex;align-items:flex-end;gap:8px;height:100px;margin-bottom:16px;">
+          <div style="flex:1;background:rgba(26,107,255,.15);border-radius:6px;height:40%;"></div>
+          <div style="flex:1;background:rgba(26,107,255,.25);border-radius:6px;height:60%;"></div>
+          <div style="flex:1;background:rgba(26,107,255,.35);border-radius:6px;height:75%;"></div>
+          <div style="flex:1;background:rgba(26,107,255,.5);border-radius:6px;height:55%;"></div>
+          <div style="flex:1;background:var(--brand-primary);border-radius:6px;height:90%;"></div>
+          <div style="flex:1;background:rgba(26,107,255,.4);border-radius:6px;height:70%;"></div>
+          <div style="flex:1;background:rgba(26,107,255,.6);border-radius:6px;height:85%;"></div>
+        </div>
+        <!-- Industry pills -->
+        <div style="display:flex;flex-wrap:wrap;gap:6px;">
+          <span style="background:#e6faf8;color:#0d9488;font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:999px;">Healthcare</span>
+          <span style="background:#e8f0ff;color:#1a6bff;font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:999px;">Financial</span>
+          <span style="background:#fff3e8;color:#f97316;font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:999px;">Manufacturing</span>
+          <span style="background:#f3e8ff;color:#9333ea;font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:999px;">Retail</span>
+          <span style="background:#eef2ff;color:#4f46e5;font-size:.72rem;font-weight:600;padding:4px 10px;border-radius:999px;">Insurance</span>
+        </div>
+      </div>
+      <div class="floating-badge floating-badge-1">
+        <i class="bi bi-lightning-charge-fill" style="color:#f97316;"></i> AI-Powered
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ INDUSTRY SELECTION ══ -->
+<section id="industries" style="padding:80px 0;background:var(--bg-surface-2);">
+  <div class="section-wrap" style="padding-top:0;padding-bottom:0;">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="bi bi-grid-3x3-gap-fill"></i> Industries</div>
+      <h2 class="section-title">Choose Your Industry</h2>
+      <p class="section-desc">
+        Select your industry to access a tailored AI dashboard, specialized agents,
+        and an AI journey designed for your domain's unique challenges.
+      </p>
+    </div>
+
+    <div class="industry-grid reveal-stagger reveal">
+      <!-- Healthcare -->
+      <div class="industry-card reveal-child" data-industry-target="healthcare">
+        <div class="industry-icon">🏥</div>
+        <h4>Healthcare</h4>
+        <p>AI-driven clinical insights, patient management, and diagnostic support.</p>
+        <div style="margin-top:14px;font-size:.75rem;font-weight:600;color:#0d9488;">
+          Enter Dashboard →
+        </div>
+      </div>
+
+      <!-- Financial -->
+      <div class="industry-card reveal-child" data-industry-target="financial">
+        <div class="industry-icon">💳</div>
+        <h4>Financial Services</h4>
+        <p>Risk modeling, fraud detection, and intelligent wealth management.</p>
+        <div style="margin-top:14px;font-size:.75rem;font-weight:600;color:#1a6bff;">
+          Enter Dashboard →
+        </div>
+      </div>
+
+      <!-- Manufacturing -->
+      <div class="industry-card reveal-child" data-industry-target="manufacturing">
+        <div class="industry-icon">🏭</div>
+        <h4>Manufacturing</h4>
+        <p>Predictive maintenance, quality control, and supply chain optimization.</p>
+        <div style="margin-top:14px;font-size:.75rem;font-weight:600;color:#f97316;">
+          Enter Dashboard →
+        </div>
+      </div>
+
+      <!-- Retail -->
+      <div class="industry-card reveal-child" data-industry-target="retail">
+        <div class="industry-icon">🛍️</div>
+        <h4>Retail</h4>
+        <p>Personalization, demand forecasting, and intelligent inventory management.</p>
+        <div style="margin-top:14px;font-size:.75rem;font-weight:600;color:#9333ea;">
+          Enter Dashboard →
+        </div>
+      </div>
+
+      <!-- Insurance -->
+      <div class="industry-card reveal-child" data-industry-target="insurance">
+        <div class="industry-icon">🛡️</div>
+        <h4>Insurance</h4>
+        <p>Claims automation, underwriting intelligence, and fraud prevention.</p>
+        <div style="margin-top:14px;font-size:.75rem;font-weight:600;color:#4f46e5;">
+          Enter Dashboard →
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CAPABILITIES / EXPLAIN ══ -->
+<section id="capabilities" style="background:var(--bg-body);">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="bi bi-stars"></i> Capabilities</div>
+      <h2 class="section-title">What AI Factory Delivers</h2>
+      <p class="section-desc">
+        A unified platform covering every stage of enterprise AI — from idea to production.
+      </p>
+    </div>
+
+    <div class="explain-grid reveal-stagger reveal">
+      <div class="explain-card reveal-child">
+        <div class="explain-icon">🤖</div>
+        <h4>Agentic AI Workflows</h4>
+        <p>Deploy autonomous AI agents that collaborate, reason, and execute complex multi-step tasks without human intervention across all your enterprise systems.</p>
+      </div>
+      <div class="explain-card reveal-child">
+        <div class="explain-icon">🔬</div>
+        <h4>Custom POC Development</h4>
+        <p>Rapid proof-of-concept delivery in 2–4 weeks, tailored to your specific industry use case with full Azure AI integration and cost validation.</p>
+      </div>
+      <div class="explain-card reveal-child">
+        <div class="explain-icon">🛡️</div>
+        <h4>Enterprise Security</h4>
+        <p>Built-in security governance using Azure Security Posture, M365 compliance agents, and identity risk management for complete data protection.</p>
+      </div>
+      <div class="explain-card reveal-child">
+        <div class="explain-icon">📊</div>
+        <h4>Synthetic Data Generation</h4>
+        <p>Generate high-quality synthetic datasets that preserve statistical properties while ensuring regulatory compliance and privacy protection.</p>
+      </div>
+      <div class="explain-card reveal-child">
+        <div class="explain-icon">⚡</div>
+        <h4>AI Optimization Engine</h4>
+        <p>Continuously monitor and optimize AI models for cost, performance, and accuracy — with automated retraining pipelines and drift detection.</p>
+      </div>
+      <div class="explain-card reveal-child">
+        <div class="explain-icon">🌐</div>
+        <h4>Microsoft Fabric Integration</h4>
+        <p>Seamlessly integrate with Microsoft Fabric for unified data analytics, real-time insights, and enterprise-grade data governance at scale.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ AI JOURNEY OVERVIEW ══ -->
+<section id="ai-journey" style="background:var(--bg-surface-2);padding:80px 0;">
+  <div class="section-wrap" style="padding-top:0;padding-bottom:0;">
+    <div class="section-header reveal">
+      <div class="section-tag"><i class="bi bi-diagram-3-fill"></i> AI Journey</div>
+      <h2 class="section-title">From Concept to Production</h2>
+      <p class="section-desc">
+        Our proven 7-step AI journey accelerates your path from business problem
+        to production-ready AI solution.
+      </p>
+    </div>
+
+    <!-- Journey Steps Visual -->
+    <div class="reveal" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:0;position:relative;">
+      <!-- Connecting line -->
+      <div style="position:absolute;top:32px;left:10%;right:10%;height:2px;
+                  background:linear-gradient(90deg,var(--brand-primary),#0d9488);
+                  z-index:0;border-radius:99px;"></div>
+
+      <!-- Step items -->
+      <div class="text-center" style="position:relative;z-index:1;padding:0 8px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:var(--brand-gradient);
+                    display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+                    margin:0 auto 14px;box-shadow:0 4px 16px rgba(26,107,255,.3);">🔍</div>
+        <div style="font-family:var(--font-display);font-size:.8rem;font-weight:600;color:var(--text-primary);">Problem Identification</div>
+      </div>
+      <div class="text-center" style="position:relative;z-index:1;padding:0 8px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a6bff,#0d9488);
+                    display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+                    margin:0 auto 14px;box-shadow:0 4px 16px rgba(26,107,255,.3);">🗄️</div>
+        <div style="font-family:var(--font-display);font-size:.8rem;font-weight:600;color:var(--text-primary);">Data Collection</div>
+      </div>
+      <div class="text-center" style="position:relative;z-index:1;padding:0 8px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a6bff,#0d9488);
+                    display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+                    margin:0 auto 14px;box-shadow:0 4px 16px rgba(26,107,255,.3);">🧪</div>
+        <div style="font-family:var(--font-display);font-size:.8rem;font-weight:600;color:var(--text-primary);">Custom POC</div>
+      </div>
+      <div class="text-center" style="position:relative;z-index:1;padding:0 8px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a6bff,#0d9488);
+                    display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+                    margin:0 auto 14px;box-shadow:0 4px 16px rgba(26,107,255,.3);">🧠</div>
+        <div style="font-family:var(--font-display);font-size:.8rem;font-weight:600;color:var(--text-primary);">Model Training</div>
+      </div>
+      <div class="text-center" style="position:relative;z-index:1;padding:0 8px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a6bff,#0d9488);
+                    display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+                    margin:0 auto 14px;box-shadow:0 4px 16px rgba(26,107,255,.3);">✅</div>
+        <div style="font-family:var(--font-display);font-size:.8rem;font-weight:600;color:var(--text-primary);">Testing & Validation</div>
+      </div>
+      <div class="text-center" style="position:relative;z-index:1;padding:0 8px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:linear-gradient(135deg,#1a6bff,#0d9488);
+                    display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+                    margin:0 auto 14px;box-shadow:0 4px 16px rgba(26,107,255,.3);">🚀</div>
+        <div style="font-family:var(--font-display);font-size:.8rem;font-weight:600;color:var(--text-primary);">Deployment</div>
+      </div>
+      <div class="text-center" style="position:relative;z-index:1;padding:0 8px;">
+        <div style="width:64px;height:64px;border-radius:50%;background:var(--brand-gradient);
+                    display:flex;align-items:center;justify-content:center;font-size:1.4rem;
+                    margin:0 auto 14px;box-shadow:0 4px 16px rgba(13,148,136,.3);">📡</div>
+        <div style="font-family:var(--font-display);font-size:.8rem;font-weight:600;color:var(--text-primary);">Monitoring & Optimization</div>
+      </div>
+    </div>
+
+    <div class="text-center reveal" style="margin-top:40px;">
+      <a href="#industries" class="btn-accent">
+        <i class="bi bi-arrow-right-circle-fill"></i> Start Your AI Journey
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══ CTA SECTION ══ -->
+<section class="cta-section reveal">
+  <div class="section-tag" style="margin-bottom:16px;color:#a5f3fc;background:rgba(255,255,255,.1);">
+    <i class="bi bi-rocket-takeoff-fill"></i> Get Started
+  </div>
+  <h2>Ready to Transform Your AI Development?</h2>
+  <p>Join leading organizations who are accelerating their AI journey with AI Factory.</p>
+  <a href="#industries" class="btn-accent" style="font-size:1rem;padding:14px 32px;">
+    <i class="bi bi-grid-3x3-gap-fill"></i> Select Your Industry
+  </a>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer class="landing-footer">
+  <div style="font-family:var(--font-display);font-weight:700;margin-bottom:4px;">
+    <i class="bi bi-lightning-charge-fill text-accent"></i> AI Factory
+  </div>
+  <div>© 2025 AI Factory by UnifyCloud. All rights reserved.</div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/landing.js"></script>
+</body>
+</html>
